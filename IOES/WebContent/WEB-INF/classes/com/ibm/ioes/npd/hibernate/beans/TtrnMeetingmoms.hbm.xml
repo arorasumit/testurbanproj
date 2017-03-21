@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 9, 2009 11:12:38 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+	<class name="com.ibm.ioes.npd.hibernate.beans.TtrnMeetingmoms"
+		table="TTRN_MEETINGMOMS">
+		<id name="meetingmomid" type="long">
+			<column name="MEETINGMOMID" />
+			<generator class="identity" />
+		</id>
+		<many-to-one name="tmMeetings"
+			class="com.ibm.ioes.npd.hibernate.beans.TtrnMeetingschedules"
+			fetch="select">
+			<column name="MEETINGID" not-null="true" />
+		</many-to-one>
+		<property name="mom" type="blob">
+			<column name="MOM" />
+		</property>
+		<property name="isactive" type="int">
+			<column name="ISACTIVE" not-null="true" />
+		</property>
+		<many-to-one name="createdby"
+			class="com.ibm.ioes.npd.hibernate.beans.TmEmployee"
+			fetch="select" lazy="false">
+			<column name="CREATEDBY" />
+		</many-to-one>
+		
+		<property name="createddate" type="timestamp">
+			<column name="CREATEDDATE" length="26" not-null="true" />
+		</property>
+		<property name="modifiedby" type="java.lang.Long">
+			<column name="MODIFIEDBY" />
+		</property>
+		<property name="modifieddate" type="timestamp">
+			<column name="MODIFIEDDATE" length="26" />
+		</property>
+		<property name="filename" type="string">
+			<column name="FILENAME" length="215" />
+		</property>
+	</class>
+</hibernate-mapping>

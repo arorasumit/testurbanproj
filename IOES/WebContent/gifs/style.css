@@ -1,0 +1,151 @@
+/* CSS Document */
+HTML,body,p,form{margin:0px; padding:0px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; height:100%;}
+input{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;}
+select{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;}
+table, table td{ font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;}
+ul,li{margin:0px; padding:0px;}
+
+body{background:#F7F7E7;}
+.tborder{margin-left:auto; margin-right:auto;}
+
+.head{background:#336699; margin:10px; padding:5px 0px 5px 6px; color:#ffffff;}
+.head span{background: no-repeat 0px 0px; padding:0px 0px 0px 18px;}
+
+.inputDisabled{background:#CCCCCC;font-size:12px; padding:0px 5px 0px 5px;  margin-left:10px; font-family:Verdana, Arial, Helvetica, sans-serif; border:1px #8D8D8D solid;}
+.inputBorder{background:#F7F7E7;font-size:12px; padding:0px 5px 0px 5px;  margin-left:10px; font-family:Verdana, Arial, Helvetica, sans-serif; border:1px #8D8D8D solid;}
+.inputBorder1{background:#FFFF99;font-size:12px; padding:0px 5px 0px 5px;  margin-left:10px; font-family:Verdana, Arial, Helvetica, sans-serif; border:1px #8D8D8D solid;}
+.inputBorder2{background:#ffffff;font-size:12px; padding:0px 5px 0px 5px;  margin-left:10px; font-family:Verdana, Arial, Helvetica, sans-serif; border:1px #8D8D8D solid;}
+.inputBorder3{background:#ffffff;font-size:11px; padding:0px 5px 0px 5px;  margin-left:10px; font-family:Verdana, Arial, Helvetica, sans-serif; border:1px #8D8D8D solid;}
+.inputBorder4{background:#FFFF99;font-size:12px; padding:0px 5px 0px 5px;font-family:Verdana, Arial, Helvetica, sans-serif; border:0px; margin-right: 5px;}
+.inputBorder5{background:#F7F7E7;font-size:12px; padding:0px 2px 0px 2px;  margin-left:1px; font-family:Verdana, Arial, Helvetica, sans-serif; border:0px;}
+.dropdownMargin{margin-left:10px; background:#FFFF99;z-index:0;}
+.dropdownMargin1{margin-left:10px; background:#F7F7E7;z-index:0;}
+/* --rahul */
+.input-disabledfortextbox{background-color:#EBEBE4;border:1px solid #ABADB3;padding:2px 1px;}
+.ui-autocomplete-loading { background:url('img/loading.gif') no-repeat right center }
+/* //rahul */
+.columnFontSmall{font-size:9px;}
+
+.border1{border:1px #739CBA solid; font-size:12px; color:#000000; padding:10px 15px 10px 15px; margin:0px 10px 0px 10px; clear:both;}
+.border1 b{color:#000000 !important;}
+.border1 legend{padding-bottom:6px;}
+
+.border2{border:1px #739CBA solid; font-size:12px; color:#000000; padding:5px 2px 10px 2px; margin:0px 10px 0px 10px;}
+.border3{border:1px #739CBA solid; font-size:12px; color:#000000; padding:5px 2px 0px 2px; margin:0px 10px 0px 10px;}
+
+ /* for calender */
+ .borderTabCal{vertical-align:top;background:#FFFF99;} 
+ 
+.searchBg{padding-left:10px; background: url(searchBg.gif) no-repeat; float:left; margin: 0px 1px 0px 5px; cursor:pointer;}
+.searchBg A{padding-right: 10px; DISPLAY: block; background: url(searchBgRight.gif) right top no-repeat; float:left; color: #000000; LINE-HEIGHT: 20px; height: 23px; TEXT-DECORATION: none; overflow:hidden;}
+
+.disconnectBg{padding-left:2px; background: url(searchBg.gif) no-repeat; float:left; margin: 0px 1px 0px 5px; cursor:pointer;}
+.disconnectBg A{padding-right: 2px; DISPLAY: block; background: url(searchBgRight.gif) right top no-repeat; float:left; color: #000000; LINE-HEIGHT: 20px; height: 23px; TEXT-DECORATION: none; overflow:hidden;}
+
+.searchBg1{padding-left:5px; background: url(searchBg1.gif) no-repeat; float:left; margin: 0px 1px 0px 5px; cursor:pointer;}
+.searchBg1 A{padding-right: 5px; DISPLAY: block; background: url(searchBgRight1.gif) right top no-repeat; float:left; color: #000000; LINE-HEIGHT: 20px; height: 23px; TEXT-DECORATION: none; overflow:hidden;}
+
+.deleteBg1{padding-left:5px; background: url(Delete.gif) no-repeat; float:left; margin: 0px 1px 0px 5px; cursor:pointer;}
+.deleteBg1 A{padding-right: 5px; DISPLAY: block; background: url(Delete.gif) right top no-repeat; float:left; color: #000000; LINE-HEIGHT: 20px; height: 23px; TEXT-DECORATION: none; overflow:hidden;}
+.buttonLarge{font-size:11px; color:#000000; text-align:center; background:url(buttonSmall.gif) no-repeat; width:145px; padding:5px 0px 6px 0px; cursor:pointer; font-weight:normal !important; margin-left:10px;}
+
+
+
+.tab1{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000; background:#ffffff;}
+.tab1 td{padding:3px 3px 4px 10px;background:#F3F3F3; font-weight:bold;}
+.tab1 td input.none{border:0px; }
+.tab1 td b{color:#000000; font-size:12px;}
+.tab1 td b.sh{color:#ffffff;}
+.tab1 td a{text-decoration:none; color:#0000ff;}
+.tab1 td a:hover{text-decoration:underline;}
+
+.tab1 tr.bdBg td{background:#6D8FB2; color:#ffffff !important;}
+.tab1 tr.bdBg td b{color:#ffffff !important;}
+
+.scroll{height:300px;   width:100%; overflow:auto; scrollbar-base-color:#F7F7E7; scrollbar-arrow-color:#000000; }
+.scrollWithAutoScroll{height:300px;   width:100%; overflow:scroll; scrollbar-base-color:#F7F7E7; scrollbar-arrow-color:#000000; }
+.scrollWithAutoScroll1{height:300px;   width:100%; overflow:auto; scrollbar-base-color:#F7F7E7; scrollbar-arrow-color:#000000; }
+.scrollWithoutAutoScroll{height:300px;   width:100%; overflow:hidden;}
+
+.button{padding-right: 4px; display: block; background: url(tabRight.gif) no-repeat right top; float: left; font-size: 11px; color: #FFFFFF; margin-right: 3px; height: 20px; text-decoration: none}
+.button SPAN {display: block;  background: url(tabLeft.gif) no-repeat; line-height: 13px; padding:4px 12px 9px 12px; font-size: 11px;}
+
+
+.tabButton{margin:5px 10px 0px 10px;}
+
+
+
+
+/* Tab Css */
+.tabledata{margin:5px 10px 0px 10px;}
+
+OL#toc {list-style:none; height: 2em; margin-left:20px;}
+
+OL#toc LI {padding-left:10px; background: url(tab.png) #ffffff; float:left; margin: 0px 1px 0px 0px;}
+
+OL#toc A {padding-right: 10px; DISPLAY: block; background: url(tab.png) #ffffff 100% 0px; float:left; color: #000000; LINE-HEIGHT: 2em; height: 2em; TEXT-DECORATION: none
+}
+OL#toc LI.current {background-position: 0px -60px; }
+OL#toc LI.current A {background-position: 100% -60px; color: #ffffff;}
+
+.tab2{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000; border:2px #CCCC99 solid;}
+.tab2 td{padding:3px 3px 4px 4px; border:1px #E5E5CA solid;}
+.tab2 tr.grayBg{background:#CCCC99; }
+.tab2 tr.grayBg td{color:#5788B1 !important;}
+.tab2 tr.lightBg{background:#FEFEFE;}
+.tab2 tr.lightBg:hover{background:#0000FE; color:#ffffff !important; }
+.tab2 tr.normal{background:#F7F7E7;}
+.tab2 tr.normal:hover{background:#0000FE; color:#ffffff !important; }
+tr.greenBg{background:#33CC33;}
+tr.greenBg:hover{background:#0000FE; color:#ffffff !important; }
+
+/* new Page */
+ .link{color:#956654; font-size:11px; font-family:Arial, Helvetica, sans-serif; margin-right:20px;}
+ .link a{color:#956654; text-decoration:underline; margin-right:5px;}
+ .link a:hover{color:#956654; text-decoration:none;}
+ 
+ .line{background:url(line.gif) repeat-x; height:8px; margin:3px 20px 3px 20px;}
+ .userName{text-align:right; color:#29509A; font-size:11px; font-family:Arial, Helvetica, sans-serif; margin-right:20px;}
+ 
+ .nav{color:#2A649D; font-size:12px; font-family:Arial, Helvetica, sans-serif; padding:0px 0px 2px 0px; margin:10px 20px 10px 20px; border-bottom:1px #EBEDDC solid; font-weight:bold; }
+ 
+ .newPage{border:1px #C7C3B3 solid; margin:5px 0px 10px 0px; border-collapse:collapse; color:#29509A;}
+ .newPage td{border:1px #C7C3B3 solid; padding:5px; border-collapse:collapse;}
+ .newPage td ul{list-style:none;}
+ .newPage td ul li{padding:2px 2px 2px 22px; background:url(folder.gif) 3px 2px no-repeat;}
+ .newPage td ul li a{color:#956654; text-decoration:underline; font-size:11px;}
+ .newPage td ul li a:hover{text-decoration:none;}
+ 
+  .subLi{padding:2px 2px 2px 22px; background:url(i.gif) 3px 2px no-repeat;}
+  
+#hintbox{ /*CSS for pop up hint box */
+position:absolute;
+top: 0;
+background-color: lightyellow;
+width: 150px; /*Default width of hint.*/ 
+padding: 3px;
+border:1px solid black;
+font:normal 11px Verdana;
+line-height:18px;
+z-index:100;
+border-right: 3px solid black;
+border-bottom: 3px solid black;
+visibility: hidden;
+}
+.legendwrap{
+ 	layout: vertical;
+     width: 350;
+     floating: true;
+     align: center;
+     verticalAlign: bottom;
+     borderWidth: 1;
+     itemWidth: 500px;
+}
+
+.hintanchor{ /*CSS for link that shows hint onmouseover*/
+font-weight: bold;
+color: navy;
+margin: 3px 8px;
+}
+.rowHighlight{background:#F6CECE}
+

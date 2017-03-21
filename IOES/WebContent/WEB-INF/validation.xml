@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE form-validation PUBLIC
+     "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.3.0//EN"
+     "http://jakarta.apache.org/commons/dtds/validator_1_3_0.dtd">
+
+<form-validation>
+<formset>
+		<!-- Login Form -->
+		<form name="loginBean">
+			<field property="loginId" depends="required,email">
+				<arg position="0" key="loginBean.loginId"
+					bundle="FieldResources" />
+			</field>
+		</form>
+
+		<!-- Change Password Form -->
+		<form name="changePasswordBean">
+			<field property="loginId" depends="required,minlength">
+				<arg position="0" key="changePass.loginId"
+					bundle="FieldResources" />
+				<arg position="1" key="${var:minlength}"
+					resource="false" />
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>8</var-value>
+				</var>
+			</field>
+			<field property="oldpassword"
+				depends="required,minlength">
+				<arg position="0" key="changePass.old"
+					bundle="FieldResources" />
+				<arg position="1" key="${var:minlength}"
+					resource="false" />
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>8</var-value>
+				</var>
+			</field>
+			<field property="newpassword"
+				depends="required,minlength">
+				<arg position="0" key="changePass.new"
+					bundle="FieldResources" />
+				<arg position="1" key="${var:minlength}"
+					resource="false" />
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>8</var-value>
+				</var>
+			</field>
+			<field property="againpassword"
+				depends="required,validwhen">
+				<arg position="0" key="changePass.again"
+					bundle="FieldResources" />
+				<arg position="1" key="${var:test}" resource="false" />
+				<var>
+					<var-name>test</var-name>
+					<var-value>(*this* == newpassword)</var-value>
+				</var>
+			</field>
+		</form>
+
+		<!-- Change Password Link Form -->
+		<form name="pwdLinkBean">
+			<field property="password" depends="required,minlength">
+				<arg position="0" key="changePass.new"
+					bundle="FieldResources" />
+				<arg position="1" key="${var:minlength}"
+					resource="false" />
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>8</var-value>
+				</var>
+			</field>
+			<field property="confirmpassword"
+				depends="required,validwhen">
+				<arg position="0" key="changePass.again"
+					bundle="FieldResources" />
+				<arg position="1" key="${var:test}" resource="false" />
+				<var>
+					<var-name>test</var-name>
+					<var-value>(*this* == password)</var-value>
+				</var>
+			</field>
+		</form>
+
+		<!-- Reset Password Form  -->
+		<form name="resetPasswordBean">
+			<field property="loginId" depends="required,minlength">
+				<arg position="0" key="resetPass.loginId"
+					bundle="FieldResources" />
+				<arg position="1" key="${var:minlength}"
+					resource="false" />
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>8</var-value>
+				</var>
+
+			</field>
+		</form>
+
+	</formset>
+</form-validation>

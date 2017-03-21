@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.ejs.models.base.bindings.webappbnd:WebAppBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.ejs.models.base.bindings.webappbnd="webappbnd.xmi" xmi:id="WebAppBinding_1260245811968" virtualHostName="default_host">
+  <webapp href="WEB-INF/web.xml#WebApp_ID"/>
+  <resRefBindings xmi:id="ResourceRefBinding_1269928624265" jndiName="jdbc/ioes">
+    <bindingResourceRef href="WEB-INF/web.xml#IOES"/>
+  </resRefBindings>
+</com.ibm.ejs.models.base.bindings.webappbnd:WebAppBinding>

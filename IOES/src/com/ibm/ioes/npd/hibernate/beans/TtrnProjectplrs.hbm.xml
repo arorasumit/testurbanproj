@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 9, 2009 11:12:38 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+    <class name="com.ibm.ioes.npd.hibernate.beans.TtrnProjectplrs" table="TTRN_PROJECTPLRS">
+        <id name="projectplrid" type="long">
+            <column name="PROJECTPLRID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="ttrnProject" class="com.ibm.ioes.npd.hibernate.beans.TtrnProject" fetch="select">
+            <column name="PROJECTID" not-null="true" />
+        </many-to-one>
+        <property name="plrstartdate" type="date">
+            <column name="PLRSTARTDATE" length="10" not-null="true" />
+        </property>
+        <property name="plrenddate" type="date">
+            <column name="PLRENDDATE" length="10" />
+        </property>
+        <property name="isactive" type="int">
+            <column name="ISACTIVE" not-null="true" />
+        </property>
+        <property name="createdby" type="long">
+            <column name="CREATEDBY" not-null="true" />
+        </property>
+        <property name="createddate" type="timestamp">
+            <column name="CREATEDDATE" length="26" not-null="true" />
+        </property>
+        <property name="modifiedby" type="java.lang.Long">
+            <column name="MODIFIEDBY" />
+        </property>
+        <property name="modifieddate" type="timestamp">
+            <column name="MODIFIEDDATE" length="26" />
+        </property>
+        <set name="ttrnProjectplrdetailses" inverse="true">
+            <key>
+                <column name="PROJECTPLRID" not-null="true" />
+            </key>
+            <one-to-many class="com.ibm.ioes.npd.hibernate.beans.TtrnProjectplrdetails" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 9, 2009 11:12:38 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+    <class name="com.ibm.ioes.npd.hibernate.beans.TtrnProjectisssues" table="TTRN_PROJECTISSSUES">
+        <id name="projissueid" type="long">
+            <column name="PROJISSUEID" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="ttrnProject" class="com.ibm.ioes.npd.hibernate.beans.TtrnProject" lazy="false">
+            <column name="PROJECTID" not-null="true" />
+        </many-to-one>
+        <property name="issuedesc" type="string">
+            <column name="ISSUEDESC" length="1000" not-null="true" />
+        </property>
+        <property name="status" type="int">
+            <column name="STATUS" not-null="true" />
+        </property>
+        <property name="priority" type="string">
+            <column name="PRIORITY" length="1" not-null="true" />
+        </property>
+        <property name="resolutiontime" type="int">
+            <column name="RESOLUTIONTIME" not-null="true" />
+        </property>
+           <many-to-one name="raisedby" class="com.ibm.ioes.npd.hibernate.beans.TmEmployee" lazy="false">
+            <column name="RAISEDBY" not-null="true" />
+        </many-to-one>
+      
+        <property name="raiseddate" type="timestamp">
+            <column name="RAISEDDATE" length="26" not-null="true" />
+        </property>
+         <many-to-one name="resolutionowner" class="com.ibm.ioes.npd.hibernate.beans.TmEmployee" lazy="false">
+            <column name="RESOLUTIONOWNER" />
+        </many-to-one>
+       
+        <property name="resolutiondate" type="date">
+            <column name="RESOLUTIONDATE" length="10" />
+        </property>
+        <property name="actualresolutiondate" type="date">
+            <column name="ACTUALRESOLUTIONDATE" length="10" />
+        </property>
+        <property name="preposedresolutionsteps" type="string">
+            <column name="PREPOSEDRESOLUTIONSTEPS" length="2000" />
+        </property>
+        <property name="isactive" type="int">
+            <column name="ISACTIVE" not-null="true" />
+        </property>
+        <property name="createdby" type="long">
+            <column name="CREATEDBY" not-null="true" />
+        </property>
+        <property name="createddate" type="timestamp">
+            <column name="CREATEDDATE" length="26" not-null="true" />
+        </property>
+        <property name="modifiedby" type="java.lang.Long">
+            <column name="MODIFIEDBY" />
+        </property>
+        <property name="modifieddate" type="timestamp">
+            <column name="MODIFIEDDATE" length="26" />
+        </property>
+    </class>
+</hibernate-mapping>

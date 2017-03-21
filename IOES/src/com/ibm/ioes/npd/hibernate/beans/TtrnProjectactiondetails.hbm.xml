@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 9, 2009 11:12:38 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+    <class name="com.ibm.ioes.npd.hibernate.beans.TtrnProjectactiondetails" table="TTRN_PROJECTACTIONDETAILS">
+        <id name="projectactionid" type="long">
+            <column name="PROJECTACTIONID" />
+            <generator class="assigned" />
+        </id>
+        <property name="projectid" type="long">
+            <column name="PROJECTID" not-null="true" />
+        </property>
+        <property name="stageid" type="java.lang.Integer">
+            <column name="STAGEID" />
+        </property>
+        <property name="taskid" type="java.lang.Long">
+            <column name="TASKID" />
+        </property>
+        <property name="taskactiontaken" type="string">
+            <column name="TASKACTIONTAKEN" length="10" />
+        </property>
+        <property name="taskowner" type="java.lang.Integer">
+            <column name="TASKOWNER" />
+        </property>
+        <property name="actiondate" type="date">
+            <column name="ACTIONDATE" length="10" />
+        </property>
+        <property name="actionremarks" type="string">
+            <column name="ACTIONREMARKS" length="1000" />
+        </property>
+        <property name="isdocsattached" type="java.lang.Integer">
+            <column name="ISDOCSATTACHED" />
+        </property>
+        <property name="actiontype" type="java.lang.Integer">
+            <column name="ACTIONTYPE" />
+        </property>
+        <property name="nextstageid" type="java.lang.Integer">
+            <column name="NEXTSTAGEID" />
+        </property>
+        <property name="nexttaskid" type="java.lang.Long">
+            <column name="NEXTTASKID" />
+        </property>
+        <property name="createdby" type="int">
+            <column name="CREATEDBY" not-null="true" />
+        </property>
+        <property name="createddate" type="timestamp">
+            <column name="CREATEDDATE" length="26" not-null="true" />
+        </property>
+        <property name="modifiedby" type="java.lang.Integer">
+            <column name="MODIFIEDBY" />
+        </property>
+        <property name="modifieddate" type="date">
+            <column name="MODIFIEDDATE" length="10" />
+        </property>
+        <property name="isactive" type="int">
+            <column name="ISACTIVE" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

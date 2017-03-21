@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/WebSphere Application Server v8.5 JRE">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path=".apt_generated">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/com.ibm.ws.ast.st.runtime.runtimeTarget.v85/WebSphere Application Server v8.5">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Amit/DB2Jars/db2jcc.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/DB2Jars/db2jcc_javax.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/FXProperties_jars/91/FX_Properties_91.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/aimw.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/aimwDocs.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/asm-attrs.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/asynchbeans.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/asynchbeansImpl.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/baliDocs.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/bsf-2.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/classes12.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/classes12_g.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/classes12dms.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/classes12dms_g.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/classes111.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/classes111_g.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.mq.commonservices.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.mq.connector.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.mq.headers.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.mq.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.mq.jmqi.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.mq.jmqi.local.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.mq.jmqi.remote.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.mq.jmqi.system.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.mq.jms.admin.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.mq.pcf.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.msg.client.commonservices.j2se.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.msg.client.commonservices.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.msg.client.jms.internal.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.msg.client.jms.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.msg.client.matchspace.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.msg.client.provider.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.msg.client.ref.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.msg.client.wmq.common.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.msg.client.wmq.factories.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.msg.client.wmq.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/com.ibm.msg.client.wmq.v6.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/connector.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/customerudt.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/customerudtDocs.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/db2jcc_license_cisuz.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/db2jcc_license_cu.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/dbbeans.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/dhbcore.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/ducm.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/ducmDocs.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/i18n.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/inventory.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/inventoryDocs.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/j2ssh-core-0.2.9.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/jakarta-oro.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/jaxb-api.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/jaxb-impl.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/jaxb-libs.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/jaxen-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/jaxen-full.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/jax-qname.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/jms.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/jndi.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/JNITuxedo.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/jsch-0.1.39.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/jspsql.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/jxl.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/kcServlet.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/mozutil.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/mqcontext.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/namespace.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/nls_charset11.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/nls_charset12.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/ocrs12.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/ojdbc14_g.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/opencsv-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/oro-2.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/powercare.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/powercareDocs.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/powercareudt.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/powercareudtDocs.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/prepay.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/prepayDocs.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/qname.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/relaxngDatatype.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/saxpath.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/sfq.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/sfqDocs.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/sitelib.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/SQLHelper.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/standard.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/standard-1.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/stax-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/taglibs-application.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/taglibs-datetime.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/taglibs-mailer.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/taglibs-page.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/taglibs-request.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/taglibs-response.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/taglibs-session.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/taglibs-string.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/udt.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/udtDocs.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/use_managed_bean.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/utility.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/vm.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/WBIA.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/wbiart.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/wdo_jdbc_access.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/wdo_web.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/webservices.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/workflow.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/workflowDocs.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/wsdl4j.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/wsexception.jar"/>
+	<classpathentry kind="lib" path="C:/Amit/IOES/SVN_COMPLETE/IB2B_SHARED_JARS/xsdlib.jar"/>
+	<classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
+</classpath>

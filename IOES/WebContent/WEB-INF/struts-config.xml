@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+
+	<!-- Form Beans -->
+	<form-beans>
+		<form-bean name="defaultBean" type="com.ibm.ioes.beans.DefaultBean"></form-bean>
+		<form-bean name="newOrderBean" type="com.ibm.ioes.beans.NewOrderBean"></form-bean>
+		<form-bean name="InsertionBean" type="com.ibm.ioes.beans.InsertionBean"></form-bean>
+		<form-bean name="UniversalWorkQueueLogicalFormBean" type="com.ibm.ioes.forms.UniversalWorkQueueFormBean"></form-bean>
+		<form-bean name="ViewOrderLogicalFormBean" type="com.ibm.ioes.forms.ViewOrderFormBean"></form-bean>
+		<form-bean name="siTransferBean" type="com.ibm.ioes.beans.SITransferBean"></form-bean>
+		<form-bean name="currencyChangeBean" type="com.ibm.ioes.beans.CurrencyChangeBean"></form-bean>
+		<form-bean name="escalationBean" type="com.ibm.ioes.beans.EscalationBean"></form-bean>
+		<form-bean name="locationDetailBean"
+			type="com.ibm.ioes.beans.LocationDetailBean">
+		</form-bean>
+			<form-bean name="dispatchAddressBean"
+			type="com.ibm.ioes.beans.DispatchAddressBean">
+		</form-bean>
+		<form-bean name="bcpAddressBean"
+			type="com.ibm.ioes.beans.BCPAddressBean">
+		</form-bean>
+		<form-bean name="masterAttributesBean"
+			type="com.ibm.ioes.beans.MasterAttributesBean">
+		</form-bean>
+		<form-bean name="changeOrderTypeBean"
+			type="com.ibm.ioes.beans.ChangeOrderTypeBean">
+		</form-bean>
+		
+		<form-bean name="networkLocationBean"
+			type="com.ibm.ioes.beans.NetworkLocationBean">
+		</form-bean>
+		<form-bean name="reportsBean"
+			type="com.ibm.ioes.beans.ReportsBean">
+		</form-bean>
+		<form-bean name="acessMatrixBean"
+			type="com.ibm.ioes.beans.RoleAcessMatrixBean">
+		</form-bean>
+		
+		<!-- Begins NPD Bean mapping below add by anil-->
+		<form-bean name="projectPlanReportBean"
+			type="com.ibm.ioes.npd.beans.ProjectPlanReportBean">
+		</form-bean>
+		<form-bean name="projectStatusReportBean"
+			type="com.ibm.ioes.npd.beans.ProjectStatusReportBean">
+		</form-bean>
+		
+		<form-bean name="welcomeOptionBean"
+			type="com.ibm.ioes.npd.beans.WelcomeOptionBean">
+		</form-bean>
+		<form-bean name="loginBean"
+			type="com.ibm.ioes.npd.beans.LoginBean">
+		</form-bean>
+		<form-bean name="roleSelectionBean"
+			type="com.ibm.ioes.npd.beans.RoleSelectionBean">
+		</form-bean>
+		<!-- Create new project bean mapping for npd -->
+		<form-bean name="masterProjectPlanBean"
+			type="com.ibm.ioes.npd.beans.MasterProjectPlan">
+		</form-bean>
+
+		<form-bean name="referenceDocBean"
+			type="com.ibm.ioes.npd.beans.ReferenceDocBean">
+		</form-bean>
+
+		<form-bean name="productCreationBean"
+			type="com.ibm.ioes.npd.beans.ProductCreationBean">
+		</form-bean>
+
+		<form-bean name="rfiBean" type="com.ibm.ioes.npd.beans.RfiBean">
+		</form-bean>
+
+		<form-bean name="issueBean"
+			type="com.ibm.ioes.npd.beans.IssuesCaptureBean">
+		</form-bean>				
+		
+		<form-bean name="riskBean"
+			type="com.ibm.ioes.npd.beans.RisksCaptureBean">
+		</form-bean>
+		
+		<form-bean name="performanceReportBean"
+			type="com.ibm.ioes.npd.beans.PerformanceReportBean">
+		</form-bean>
+		
+		<form-bean name="projectPlanInstanceBean"
+			type="com.ibm.ioes.npd.beans.ProjectPlanInstanceBean">
+		</form-bean>
+		
+		<form-bean name="myToDoListFormBean"
+			type="com.ibm.ioes.npd.beans.MyToDoListFormBean">
+		</form-bean>
+
+		<form-bean name="plrUploading"
+			type="com.ibm.ioes.npd.beans.PlrUploadingFormBean">
+		</form-bean>
+		
+		<form-bean name="repositoryUploadBean"
+			type="com.ibm.ioes.npd.beans.RepositoryUploadBean">
+		</form-bean>	
+		
+		<form-bean name="assumptionBean"
+			type="com.ibm.ioes.npd.beans.AssumptionCaptureBean">
+		</form-bean>	
+				
+		<form-bean name="projectDetailedStatusReportBean"
+			type="com.ibm.ioes.npd.beans.ProjectDetailedStatusReportBean">
+		</form-bean>
+		
+		<form-bean name="accessMatrixBean"
+			type="com.ibm.ioes.npd.beans.AccessMatrixBean">
+		</form-bean>
+		
+		<form-bean name="funnelBean"
+			type="com.ibm.ioes.npd.beans.FunnelReportbean">
+		</form-bean>
+		
+		<form-bean name="npdResourceListBean"
+			type="com.ibm.ioes.npd.beans.NPDResourceListBean">
+		</form-bean>
+		
+		<form-bean name="productCategoryBean"
+			type="com.ibm.ioes.npd.beans.ProductCategoryBean">
+		</form-bean>
+		
+		<form-bean name="unMappedEmployeeBean"
+			type="com.ibm.ioes.npd.beans.UnMappedEmployeeBean">
+		</form-bean>
+		
+		<form-bean name="sendSmsBean"
+			type="com.ibm.ioes.npd.beans.SendSmsBean">
+		</form-bean>
+		
+		<form-bean name="holidayMasterBean"
+			type="com.ibm.ioes.npd.beans.HolidayMasterBean">
+		</form-bean>
+		
+		<form-bean name="changePwdBean"
+			type="com.ibm.ioes.npd.beans.ChangePwdBean">
+		</form-bean>
+		
+		<form-bean name="resetPwdBean"
+			type="com.ibm.ioes.npd.beans.ResetPasswordBean">
+		</form-bean>
+		
+		<form-bean name="updateMobileNumberBean"
+			type="com.ibm.ioes.npd.beans.UpdateMobileNumberBean">
+		</form-bean>
+		
+		<form-bean name="querybuilder"
+			type="com.ibm.ioes.npd.beans.QueryBuilderBean">
+		</form-bean>
+		
+		<form-bean name="newIdeaBean"
+			type="com.ibm.ioes.npd.beans.NewIdeaBean">
+		</form-bean>
+		<form-bean name="userNpdSpocs"
+			type="com.ibm.ioes.npd.beans.UserNpdSpocs">
+		</form-bean>
+		<form-bean name="meetingBean"
+			type="com.ibm.ioes.npd.beans.MeetingBean">
+		</form-bean>
+		<!-- Bulk Upload Starts Here -->
+		<form-bean name="bulkUploadBean"
+			type="com.ibm.ioes.bulkupload.formbean.TransactionUploadFormBean">
+		</form-bean>
+		<form-bean name="transactionValidationFormBean" 
+			type="com.ibm.ioes.bulkupload.formbean.TransactionValidationFormBean">
+		</form-bean>
+		<!-- Bulk Upload Ends Here -->
+	</form-beans>
+
+	<!-- Global Exceptions -->
+	<global-exceptions></global-exceptions>
+
+	<!-- Global Forwards -->
+	<global-forwards>
+				
+		<forward name="ErrorPageAction" redirect="true"
+			path="ErrorPage.jsp">
+		</forward>
+
+	</global-forwards>
+
+	<!-- Action Mappings -->
+	<action-mappings>
+		<!-- Begins NPD action mapping below add by anil-->
+	<action path="/Welcome"
+		type="com.ibm.ioes.npd.actions.IndexAction">
+		<!-- Changed for Testing -->
+		<!--<forward name="success" path="/Login.jsp"></forward>
+		-->
+		<forward name="success" path="/npd/login1.jsp"></forward>
+		<forward name="success1" path="/RoleSelection.do?method=getRoleList">
+		</forward>
+	</action>
+	<action path="/LoginActionNPD"
+			type="com.ibm.ioes.npd.actions.LoginActionNPD" scope="request"
+			name="loginBean" parameter="method" validate="true" input="/npd/Login.jsp">
+			<forward name="failure" path="/npd/ErrorOnLogin.jsp"></forward>
+			<forward name="changepwd"
+				path="/initChangePasswordAction.do">
+			</forward>
+			<forward name="success" path="/RoleSelection.do?method=getRoleList"></forward>
+			<forward name="success1" path="/RoleSelection.do?method=getRoleList">
+			</forward>
+		</action>	
+	<action name="roleSelectionBean" path="/RoleSelection" type="com.ibm.ioes.npd.actions.RoleSelectionAction" parameter="method" scope="request">
+			<forward name="success" path="/npd/RoleSelection.jsp"></forward>
+			<forward name="ShowHomePage" path="/npd//Homepage.jsp"></forward>
+			<forward name="SessionExpired" path="/npd/InvalidSession.do"></forward>
+	</action>	
+	<action name="roleSelectionBean" path="/Dashboard" type="com.ibm.ioes.npd.actions.DashBoardAction" parameter="method" scope="request">
+			<forward name="success" path="/npd/DashBoard.jsp"></forward>
+	</action>
+	<action path="/WelcomeOption" type="com.ibm.ioes.npd.actions.WelcomeOptionAction" 
+				name="welcomeOptionBean" parameter="method" >
+			<forward name="success" path="/npd/welcomeOption.jsp"/>
+	</action>	
+	<action path="/projectPlanReport"
+			type="com.ibm.ioes.npd.actions.ProjectPlanReportAction" scope="request"
+			name="projectPlanReportBean" parameter="method" >
+			
+			<forward name="export" path="/npd/exportReport.jsp"></forward>
+			<forward name="success" path="/npd/projectplanreport.jsp"></forward>
+			<forward name="viewworkflow" path="/npd/projectplanworkflowreport.jsp"></forward>
+			
+	</action>
+	<action path="/projectStatusReport"
+			type="com.ibm.ioes.npd.actions.ProjectStatusReportAction" scope="request"
+			name="projectStatusReportBean" parameter="method" >
+			
+			<forward name="success" path="/npd/projectstatusreport.jsp"></forward>
+			<forward name="exportAssumptionToExcel" path="/npd/exportAssumptionReport.jsp"></forward>
+			<forward name="ganttChart" path="/npd/GanttCharts.jsp"></forward>
+			<forward name="stageGanttChart" path="/npd/StageGanttChart.jsp"></forward>
+	</action>
+	<action name="masterProjectPlanBean" path="/addMasterPlan"
+			type="com.ibm.ioes.npd.actions.ManageProjectPlanAction" parameter="method"
+			scope="request">
+			<forward name="initWorkflow" path="/npd/addWorkflow.jsp">
+			</forward>
+			<forward name="initEditWorkflow" path="/npd/editWorkflow.jsp">
+			</forward>
+			<forward name="initStage" path="/npd/addStage.jsp"></forward>
+			<forward name="initTask" path="/npd/addTask.jsp"></forward>
+			<forward name="initUpdateTask" path="/npd/updateTask.jsp">
+			</forward>
+			<forward name="success"
+				path="addMasterPlan.do?method=viewMasterPlan"></forward>
+			<forward name="finalWorkflow"
+				path="/npd/html-jsp/commons/messages.jsp">
+			</forward>
+		</action>
+	<action name="masterProjectPlanBean" path="/editMasterPlan"
+			type="com.ibm.ioes.npd.actions.ManageProjectPlanAction" parameter="method"
+			scope="request">
+			<forward name="initEditWorkflow" path="/npd/editWorkflow.jsp">
+			</forward>
+			<forward name="initStage" path="/npd/addStage.jsp"></forward>
+			<forward name="initTask" path="/npd/addTask.jsp"></forward>
+			<forward name="initUpdateTask" path="/npd/updateTask.jsp">
+			</forward>
+			<forward name="success"
+				path="editMasterPlan.do?method=viewMasterPlan">
+			</forward>
+			<forward name="initMasterPlanHistory"
+				path="/npd/masterProjectPlanHistory.jsp" />
+			<forward name="masterWorkflowList"
+				path="/npd/masterWorkflowList.jsp" />				
+			<forward name="finalWorkflow"
+				path="/npd/html-jsp/commons/messages.jsp">
+			</forward>
+		</action>
+	<action name="masterProjectPlanBean" path="/masterPlanVersion"
+			type="com.ibm.ioes.npd.actions.ManageProjectPlanAction" parameter="method"
+			scope="request">
+			<forward name="initMasterPlanHistory"
+				path="/npd/masterProjectPlanHistory.jsp" />
+			<forward name="changeOrderWorkflow"
+				path="/npd/viewChangeWorkflow.jsp" />
+		</action>	
+	<!-- Create New Product action mapping for npd -->
+	<action name="productCreationBean" path="/createProduct"
+			type="com.ibm.ioes.npd.actions.ProductCreationAction" parameter="method"
+			scope="request">
+			<forward name="viewProduct" path="/npd/productCreation.jsp">
+			</forward>
+			<forward name="success" path="/npd/productCreation.jsp"></forward>
+			<forward name="failure" path="/npd/productCreation.jsp"></forward>
+			<forward name="viewSearchProduct" path="/npd/searchProject.jsp"></forward>
+			<forward name="viewUpdateProduct"
+				path="/npd/updateProject.jsp">
+			</forward>
+			<forward name="viewProductProjectPlan"
+				path="/npd/attachProjectPlan.jsp">
+			</forward>			
+			<forward name="viewFinalizeNewProductsList"
+				path="/npd/draftNewProductsList.jsp">
+			</forward>
+			
+			<forward name="openFinalisePlan" path="createProduct.do?method=initSearchProductFinalizeNewPlan"></forward>
+			
+			<forward name="viewEditBaselinedPlanList"
+				path="/npd/editBaselinedPlanList.jsp">				
+			</forward>						
+			<forward name="viewProductUpdationList"
+				path="/npd/viewProductUpdationList.jsp">				
+			</forward>						
+			<forward name="viewPrdUpdationActionList"
+				path="/npd/viewPrdUpdationActionList.jsp">				
+			</forward>												
+			<forward name="viewPrdPlanGraph"
+				path="/npd/workflowGraph.jsp">				
+			</forward>	
+			<forward name="viewUpdateProductError"
+				path="/npd/updateProject.jsp">
+			</forward>									
+		</action>
+		
+		<action path="/replaceWKRoleEmployee" name="projectPlanInstanceBean"
+			type="com.ibm.ioes.npd.actions.repalceWKRoleEmployeeAction" parameter="method" scope="request">
+			<forward name="updateRoleEmployee" path="/npd/html-jsp/attachWorkflow/replaceRoleEmployee.jsp">
+			</forward>
+			<forward name="viewProjectStatusDetail" path="/projectDetailedStatusReport.do?method=viewProjectStatusDetail">
+			</forward>
+		</action>
+		<action path="/attachEditProjectPlan" name="projectPlanInstanceBean"
+			type="com.ibm.ioes.npd.actions.AttachEditProjectPlanAction" parameter="method" scope="request">
+			
+			<forward name="viewAttachedProjectPlanHome" path="/npd/html-jsp/attachWorkflow/attachedProjectPlanHome.jsp">
+			</forward>
+			<forward name="viewInstanceStages" path="/npd/html-jsp/attachWorkflow/viewInstanceStages.jsp">
+			</forward>						
+			<forward name="viewInstanceTasks" path="/npd/html-jsp/attachWorkflow/viewInstanceTasks.jsp">
+			</forward>
+			<forward name="projectPlanAttachMessage" path="/npd/html-jsp/attachWorkflow/projectPlanAttachMessage.jsp">
+			</forward>			
+			<forward name="editAttachedTask" path="/npd/html-jsp/attachWorkflow/editTask.jsp">
+			</forward>				
+			<forward name="forwardTo_viewAttachedProjectPlanHome" path="/attachEditProjectPlan.do?method=attachedProjectPlanHome">
+			</forward>	
+			<forward name="viewVersions" path="/npd/html-jsp/attachWorkflow/viewAttachedVersions.jsp">
+			</forward>				
+			<forward name="updateRoleEmployee" path="/npd/html-jsp/attachWorkflow/updateRoleEmployee.jsp">
+			</forward>
+			<forward name="removeTask" path="/npd/html-jsp/attachWorkflow/RemoveTasks.jsp">
+			</forward>
+			<forward name="prevTask" path="/npd/html-jsp/attachWorkflow/prevTask.jsp">
+			</forward>
+			<forward name="uploadPlanExcel" path="/npd/html-jsp/attachWorkflow/uploadPlanExcel.jsp">
+			</forward>
+			<forward name="viewAttachedProjectPlanHomeExcel" path="/npd/html-jsp/attachWorkflow/uploadPlanExcel.jsp">
+			</forward>
+		</action>
+		<action name="rfiBean" path="/pendingRfi"
+			type="com.ibm.ioes.npd.actions.RfiAction" parameter="method"
+			scope="request">
+			<forward name="initrfi" path="/npd/viewRfi.jsp"></forward>
+			<forward name="provideclarification"
+				path="/npd/rfiClarification.jsp">
+			</forward>
+		</action>
+
+		<action name="issueBean" path="/issueCapture"
+			type="com.ibm.ioes.npd.actions.IssuesCaptureAction" parameter="method"
+			scope="request">
+			<forward name="initIssue" path="/npd/issuesCapture.jsp"></forward>
+			<forward name="viewIssue" path="/npd/searchIssues.jsp"></forward>
+			<forward name="failure" path="/npd/issuesCapture.jsp"></forward>
+		</action>
+		
+			<action name="issueBean" path="/issueCapture1"
+			type="com.ibm.ioes.npd.actions.IssuesCaptureAction" parameter="method"
+			scope="request">
+			<forward name="viewOnlyIssue" path="/npd/viewIssues.jsp"></forward>
+		</action>
+		
+		<action name="assumptionBean" path="/assumptionCapture"
+			type="com.ibm.ioes.npd.actions.AssumptionCaptureAction" parameter="method" scope="request">
+			<forward name="initAssumption" path="/npd/assumptionCapture.jsp"></forward>
+			<forward name="viewAssumption" path="/npd/searchAssumption.jsp"></forward>
+			<forward name="failure" path="/npd/assumptionCapture.jsp"></forward>
+		</action>
+		
+		<action name="assumptionBean" path="/assumptionCapture1"
+			type="com.ibm.ioes.npd.actions.AssumptionCaptureAction" parameter="method" scope="request">
+			<forward name="viewOnlyAssumptions" path="/npd/viewAssumption.jsp"></forward>
+		</action>
+		
+		<action name="riskBean" path="/riskCapture"
+			type="com.ibm.ioes.npd.actions.RisksCaptureAction" parameter="method"
+			scope="request">
+			<forward name="initRisk" path="/npd/risksCapture.jsp"></forward>
+			<forward name="viewRisk" path="/npd/searchRisks.jsp"></forward>
+			<forward name="failure" path="/npd/risksCapture.jsp"></forward>
+		</action>
+		
+		<action name="riskBean" path="/riskCapture1"
+			type="com.ibm.ioes.npd.actions.RisksCaptureAction" parameter="method"
+			scope="request">
+			<forward name="viewOnlyRisk" path="/npd/viewRisk.jsp"></forward>
+		</action>
+		
+		<action name="performanceReportBean" path="/PerformanceReport" type="com.ibm.ioes.npd.actions.PerformanceReportAction" parameter="method" scope="request">
+			<forward name="success" path="/npd/PerformanceReport.jsp"></forward>
+			<forward name="exportToExcel" path="/npd/exportReport.jsp"></forward>
+		</action>
+		
+		<action name="myToDoListFormBean" path="/MyToDoList" type="com.ibm.ioes.npd.actions.MyToDoListAction" parameter="methodName" scope="request">
+			<forward name="myToDoList" path="/npd/myToDoListUser.jsp"></forward>
+			<forward name="approveTask" path="/npd/approvetask.jsp"></forward>
+			<forward name="rejectTask" path="/npd/rejecttask.jsp"></forward>			
+			
+			<forward name="RFITask" path="/npd/RFIagainsttask.jsp"></forward>
+			<forward name="viewWorkflow" path="projectPlanReport.do?method=viewprojectworkflow"></forward>
+			<forward name="ErrorInRFI" path="MyToDoList.do?method=RFITask"></forward>
+		</action>
+		
+		<action name="plrUploading" path="/PlrUploading" type="com.ibm.ioes.npd.actions.PlrUploadingAction" parameter="method" scope="request">
+			<forward name="success" path="/npd/plrUploadingProjectList.jsp"></forward>
+			<forward name="mapStakeHolder" path="/npd/plrUploading.jsp"></forward>
+			<forward name="uploadPlr" path="/npd/plrDocsUploading.jsp"></forward>
+			<forward name="viewDocHistory" path="/npd/plrDocHistory.jsp"></forward>
+		</action>
+		
+		<action name="repositoryUploadBean" path="/RepositoryUpload" type="com.ibm.ioes.npd.actions.RepositoryUploadAction" parameter="method" scope="request">
+			<forward name="success" path="/npd/RepositoryUpload.jsp"></forward>
+			<forward name="showProjects" path="/npd/RepositoryUpload.jsp"></forward>
+			<forward name="showStages" path="/npd/AddDocuments.jsp"></forward>
+			<forward name="getViewList" path="/npd/ViewTasks.jsp"></forward>
+			<forward name="AddDoc" path="/npd/ViewTasks.jsp"></forward>
+			<forward name="displayDocs" path="/npd/ViewProjectDocs.jsp"></forward>
+			<forward name="failure" path="/npd/RepositoryUpload.jsp"></forward>
+		</action>
+		
+		<action name="roleSelectionBean" path="/RoleSelection" type="com.ibm.ioes.npd.actions.RoleSelectionAction" parameter="method" scope="request">
+			<forward name="success" path="/npd/RoleSelection.jsp"></forward>
+			<forward name="ShowHomePage" path="/npd/Homepage.jsp"></forward>
+			<forward name="SessionExpired" path="/npd/InvalidSession.do"></forward>
+		</action>
+		
+		<action path="/projectDetailedStatusReport"
+				type="com.ibm.ioes.npd.actions.ProjectDetailedStatusReportAction" 
+				scope="request"
+				name="projectDetailedStatusReportBean" 
+				parameter="method" >
+			
+			<forward name="success" path="/npd/projectdetailedstatusreport.jsp"></forward>
+			<forward name="exporttoExcel" path="/npd/exportReport.jsp"></forward>
+		</action>
+		
+		<action name="accessMatrixBean" path="/AccessMatrix" type="com.ibm.ioes.npd.actions.AccessMatrixAction" parameter="method" scope="request">
+			<forward name="DisplayRoles" path="/npd/AccessMatrix.jsp"></forward>
+			<forward name="InterfaceList" path="/npd/AccessMatrix.jsp"></forward>
+		</action>	
+		
+		<action name="funnelBean" path="/FunnelReport"
+			type="com.ibm.ioes.npd.actions.FunnelReportAction" parameter="method" scope="request">
+			<forward name="initAccessMatrix" path="/FunnelReport.jsp"></forward>
+			<forward name="success" path="/npd/FunnelReport.jsp"></forward>
+			<forward name="exportToExcel" path="/npd/exportReport.jsp"></forward>
+		</action>
+			
+		<action name="npdResourceListBean" path="/NPDResourceListReport" type="com.ibm.ioes.npd.actions.NPDResourceListAction" parameter="method" scope="request">
+			<forward name="success" path="/npd/NPDResourceList.jsp"></forward>
+			<forward name="exportToExcel" path="/npd/exportReport.jsp"></forward>
+			<forward name="failure" path="/npd/NPDResourceList.jsp"></forward>
+		</action>				
+		
+		<action name="productCategoryBean" path="/ProductCategory" type="com.ibm.ioes.npd.actions.ProductCategoryAction" parameter="method" scope="request">
+			<forward name="success" path="/npd/EditProductCategory.jsp"></forward>
+			<forward name="productUpdated" path="/npd/EditProductCategory.jsp"></forward>
+			<forward name="productAdded" path="/npd/AddProductCategory.jsp"></forward>
+		</action>
+		
+		<action name="unMappedEmployeeBean" path="/UnMappedResource" type="com.ibm.ioes.npd.actions.UnMappedEmployeeAction" parameter="method" scope="request">
+			<forward name="success" path="/npd/unMapEmployeeReport.jsp"></forward>
+			<forward name="export" path="/npd/exportReport.jsp"></forward>
+		</action>
+		
+		<action name="sendSmsBean" path="/SendSMS" type="com.ibm.ioes.npd.actions.SendSMSAction" parameter="method" scope="request">
+			<forward name="success" path="/npd/SendSMS.jsp"></forward>
+		</action>
+		
+		<action name="holidayMasterBean" path="/holidayMaster" type="com.ibm.ioes.npd.actions.HolidayMasterAction" parameter="method" scope="request">
+			<forward name="success" path="/npd/HolidayMaster.jsp"></forward>
+			<forward name="holidayAdded" path="/npd/HolidayMaster.jsp"></forward>
+		</action>
+		
+		<action name="changePwdBean" path="/changePwd" type="com.ibm.ioes.npd.actions.ChangePwdAction" parameter="method" scope="request">
+			<forward name="ShowInterface" path="/npd/ChangePassword.jsp"></forward>
+			<forward name="failure" path="/npd/ChangePassword.jsp"></forward>
+			<forward name="passwordChanged" path="/npd/ChangePassword.jsp"></forward>
+			<forward name="SessionExpired" path="/npd/InvalidSession.do"></forward>
+		</action>
+		
+		<action name="resetPwdBean" path="/ResetPasswordAction" type="com.ibm.ioes.npd.actions.ResetPasswordAction" parameter="method" scope="request">
+			<forward name="success" path="/npd/resetPassword.jsp"></forward>
+			<forward name="failure" path="/npd/resetPassword.jsp"></forward>
+		</action>
+		
+		<action name="updateMobileNumberBean" path="/updateMobileNumber" type="com.ibm.ioes.npd.actions.UpdateMobileNumberAction" parameter="method" scope="request">
+			<forward name="success" path="/npd/updateMobileNumber.jsp"></forward>
+			<forward name="SessionExpired" path="/npd/InvalidSession.do"></forward>
+		</action>
+		
+		<action name="querybuilder" path="/QueryBuilder" type="com.ibm.ioes.npd.actions.QueryBuilderAction" parameter="method" scope="request">
+			<forward name="success" path="/npd/QueryBuilder.jsp"></forward>
+		</action>
+			<!-- End NPD action mapping above -->
+			
+			<!-- Begins IOES action mapping below -->
+	<action name="InsertionBean" path="/Insertionaction" type="com.ibm.ioes.actions.Insertionaction" parameter="method" scope="request">
+	<forward name="success" path="/OrderEntry/ChangeOrder/success.jsp"></forward>
+	</action>
+		<action name="defaultBean" path="/defaultAction" type="com.ibm.ioes.actions.defaultAction" parameter="method" scope="request">
+			<forward name="DisplayNewOrderPage" path="/OrderEntry/NewOrder/NewOrder.jsp"></forward>
+
+			<forward name="DisplayHomePage" path="default.jsp"></forward>
+			<forward name="LogOut" path="InvalidAccessLogOut.jsp"></forward>			
+			<forward name="LogIn" path="Login.jsp"></forward>	
+			<forward name="FXScheduler" path="fxApplicationScheduler.jsp"></forward>
+			<forward name="M6Scheduler" path="m6ApplicationScheduler.jsp"></forward>									
+		</action>
+		
+		<!--Nagarjuna Escalation mail -->
+		
+		<action name="escalationBean" path="/EscalationAction" 
+			type="com.ibm.ioes.actions.EscalationAction" parameter="methodName" scope="request">
+			<forward name="DisplayEsclationMail" path="/Esclation/Escalation.jsp"></forward>		
+		</action>
+		
+		<!-- lawkush Start -->
+		
+		<action name="defaultBean" path="/defaultDissociateGamAction" 
+			type="com.ibm.ioes.actions.defaultAction" parameter="method" scope="request">
+			<forward name="DisplayDissociateGam" path="/DissociateGam.jsp"></forward>		
+		</action>
+		<action name="defaultBean" path="/defaultReplaceGamAction" 
+			type="com.ibm.ioes.actions.defaultAction" parameter="method" scope="request">
+			<forward name="DisplayReplaceGam" path="/ReplaceGam.jsp"></forward>		
+		</action>
+		
+		<!-- lawkush End -->
+		<action name="defaultBean" path="/defaultNewOrderAction" 
+			type="com.ibm.ioes.actions.defaultAction" parameter="method" scope="request">
+			<forward name="DisplayNewOrderPage" path="/OrderEntry/NewOrder/NewOrder.jsp"></forward>		
+		</action>
+		
+		
+		<action name="defaultBean" path="/defaultChangeOrderAction" 
+			type="com.ibm.ioes.actions.defaultAction" parameter="method" scope="request">
+			<forward name="DisplayChangeOrderPage" path="/OrderEntry/ChangeOrder/ChangeOrder.jsp"></forward>
+		</action>
+		
+		<action name="defaultBean" path="/defaultDraftNewOrdAction" 
+			type="com.ibm.ioes.actions.defaultAction" parameter="method" scope="request">
+			<forward name="IncompleteOrderPage" path="/workqueue/inCompleteOrder1.jsp"></forward>
+			<forward name="IncompletePDOrderPage" path="/workqueue/IncompletePermanentDisconnectionOrders.jsp"></forward>
+			<forward name="LSICancellationPage" path="/workqueue/LSICancellation.jsp"></forward>
+			<forward name="standardReasonPage" path="StandardReason.jsp"></forward>
+			<forward name="ArchiveIb2bRecordsPage" path="/workqueue/ArchiveIb2bOrders.jsp"></forward>
+			<forward name="LSICancelConfirmPage" path="/workqueue/LSIConfirmCancel.jsp"></forward>
+		</action>
+		
+		<!-- nancy start -->
+		<action name="newOrderBean" path="/defaultStandardReasonAction"
+		    type="com.ibm.ioes.actions.defaultAction" parameter="method" scope="request">
+			<forward name="AssignDeassignPage" path="AssignDeassignReason.jsp"></forward>
+		</action>
+		<!-- nancy end -->
+			
+		<action name="defaultBean" path="/defaultDraftChangeOrdAction" 
+			type="com.ibm.ioes.actions.defaultAction" parameter="method" scope="request">
+			<forward name="IncompleteChangeOrderPage" path="/IncompleteOrder_Change.jsp"></forward>
+		</action>
+		
+		
+		<action path="/selectservice" name="newOrderBean"
+			type="com.ibm.ioes.actions.SelectServiceTypeAction" parameter="method" scope="request" >
+			<forward name="SUCCESS" path="/OrderEntry/NewOrder/SelectService.jsp" >	</forward>
+			<forward name="goToServiceAttribute" path="/OrderEntry/NewOrder/ServiceAttributes.jsp"></forward>
+			<forward name="goToViewServiceAttribute" path="/workqueue/viewServiceAttributes.jsp"></forward>
+			<forward name="goToPartialPublish" path="/OrderEntry/NewOrder/PartialPublish.jsp"></forward>
+		</action>
+		
+		<action path="/InvalidSession"
+				forward="SessionErrorMessage.jsp">
+		</action>
+		
+		<action name="newOrderBean" path="/NewOrderAction" type="com.ibm.ioes.actions.NewOrderAction" parameter="method" scope="request">
+			<forward name="DisplaySelectAccount" path="SelectAccount.jsp"></forward>
+			<forward name="DisplayChannelPartner" path="SelectChannelPartner.jsp"></forward>
+			<forward name="DisplaySelectOpportunity" path="SelectOpportunity.jsp"></forward>
+			<forward name="DisplayViewOpportunity" path="ViewOpportunity.jsp"></forward>
+			<forward name="DisplaySelectCurrency" path="SelectCurrency.jsp"></forward>
+			<forward name="DisplayFE" path="/workqueue/DisplayFEngineer.jsp"></forward>
+			<forward name="AddFieldEngineer" path="/workqueue/addFieldEngineer.jsp"></forward>
+			<forward name="ChangeFieldEngineer" path="/workqueue/changeFieldEngineer.jsp"></forward>
+			<forward name="DisplaySelectSource" path="SelectSource.jsp"></forward>
+			<forward name="DisplaySelectService" path="selectservice.do?method=fetchServiceType"></forward>
+			<forward name="NewOrderUpdateDisplay" path="/OrderEntry/NewOrder/NewOrder.jsp"></forward>
+			<forward name="failure" path="/OrderEntry/NewOrder/NewOrder.jsp"></forward>
+			<forward name="mainOrderEntryPage" path="/OrderEntry/NewOrder/NewOrder.jsp"></forward>
+			<forward name="DisplaySelectContactType" path="/OrderEntry/NewOrder/SelectContactType.jsp"></forward>
+			<forward name="DisplaySelectSalutation" path="/OrderEntry/NewOrder/salutation.jsp"></forward>
+			<forward name="DisplaySelectCountry" path="/OrderEntry/NewOrder/Country.jsp"></forward>
+			<forward name="DisplaySelectState" path="/OrderEntry/NewOrder/State.jsp"></forward>
+			<forward name="DisplaySelectCity" path="/OrderEntry/NewOrder/City.jsp"></forward>
+			<forward name="DisplaySelectPin" path="/OrderEntry/Pin.jsp"></forward>
+			<forward name="forwardProductCatelog" path="/OrderEntry/NewOrder/ProductCatelog.jsp"></forward>
+			<forward name="serviceAttributeListPage" path="/OrderEntry/NewOrder/ServiceProductAttribute.jsp"></forward>
+			<forward name="DisplayHomePage" path="/defaultAction.do?method=goToHome"></forward>
+			<forward name="goToServiceAttributeListPage" path="/workqueue/viewServiceProductAttribute.jsp"></forward>
+			<forward name="ProductCatelogForUpdate" path="/OrderEntry/NewOrder/ViewProductCatelog.jsp"></forward>
+			<forward name="DisplayEntity" path="SelectEntity.jsp"></forward>
+			<forward name="DisplayUploadPage" path="upload.jsp"></forward>
+			<forward name="FileAttachment" path="FileAttachment.jsp"></forward>
+			<forward name="displayOrderList" path="/workqueue/inCompleteOrder1.jsp"></forward>
+			<forward name="forwardCopyCharge" path="/OrderEntry/NewOrder/CopyCharge.jsp"></forward>
+			<forward name="UploadedFile" path="FileUploaded.jsp"></forward>
+			<forward name="DisplayCopyOrderPage" path="/OrderEntry/NewOrder/copyOrder.jsp"></forward>
+			<forward name="DisplayPartialPublishPage" path="/OrderEntry/NewOrder/viewPartialPublish.jsp"></forward>
+			<forward name="DisplaySelectNetPopLoc" path="SelectNetworkPopLocation.jsp"></forward>
+			<forward name="ViewOrderUpdateDisplay" path="/OrderEntry/NewOrder/viewOrder.jsp"></forward>
+			<forward name="viewBCPDetailsPage" path="viewBCPDetails.jsp"></forward>
+			<forward name="viewDispatchDetailsPage" path="viewDispatchAddressDetails.jsp"></forward>
+			<forward name="DisplaySendToCOPCPage" path="/workqueue/SendToCOPC.jsp"></forward>
+			<forward name="DisplayServiceCancelReason" path="/OrderEntry/NewOrder/CancellationReason.jsp"></forward>
+			<forward name="DisplayWorkQue" path="/defaultDraftNewOrdAction.do?method=viewIncompleteOrder"></forward>
+			<forward name="DisplaySelectCustLogicalSI" path="/OrderEntry/NewOrder/SelectCustomerLogicalSI.jsp"></forward>
+			<forward name="DisplayCompnentsList" path="/OrderEntry/NewOrder/viewComponentsList.jsp"></forward>
+			<forward name="DisplayPackagesList" path="/OrderEntry/NewOrder/viewPackageList.jsp"></forward>
+			<forward name="DisplaySelectOrderHistory" path="/OrderEntry/NewOrder/ApprovalOrderHistory.jsp"></forward>
+			<!--Satish Starts -->
+			<forward name="viewOrderApprovalHistoryExcel" path="/OrderEntry/NewOrder/ExcelApprovalOrderHistory.jsp"></forward>
+			<!--Satish Ends  -->
+
+			<forward name="selectGAMPage" path="selectGAMwithQuotes.jsp"></forward>
+			<forward name="viewGAMPage" path="viewAttachedGameWithOrder.jsp"></forward>
+
+			<forward name="DisplayMigrationOrderjspdccolo" path="DCColoMigrationOrder.jsp"></forward>
+			<forward name="DisplayMigrationOrderjspTeleport" path="TeleportMigrationOrder.jsp"></forward>
+			<forward name="ReAssignToAM" path="/workqueue/reassignToAM.jsp"></forward>
+			<forward name="ReAssignToPM" path="/workqueue/reassignToPM.jsp"></forward>	
+			<forward name="DisplayArborLSILookupPage" path="/OrderEntry/SelectLSIForArborBasedproducts.jsp"></forward>
+			<forward name="DisplayListOfLSINoForMBIC" path="/OrderEntry/SelectLSIForMBIC.jsp"></forward>
+			<forward name="DisplayListOfLSIOfVCS_BridgeServiceLSI" path="/OrderEntry/SelectLSIForVCS_Services.jsp"></forward>
+			<forward name="DisplayHardwareDetails" path="CancelHardwareLineItem.jsp"></forward>
+			<forward name="DisplayCancelledhardwareLineDetails" path="/OrderEntry/CancelledHardwareLineDetails.jsp"></forward>
+			<forward name="DisplaySelectContact" path="SelectContact.jsp"></forward>
+			<forward name="DemoDaysChange" path="/workqueue/IncreaseDemoDays.jsp"></forward>
+			<forward name="DemoDaysChangeExcel" path="/workqueue/DemoDaysChangeExcel.jsp"></forward>
+			<forward name="AdvancePayment" path="/OrderEntry/NewOrder/AdvancePaymentPage.jsp" />
+			<forward name="DisplayOrderCancelReason" path="/OrderEntry/NewOrder/OrderCancellationReason.jsp"></forward>
+			<forward name="viewBCPDetailsPageExport" path="exportBCPExcel.jsp"></forward>
+			<forward name="viewdDispacthDetailsPageExport" path="exportDispatchAddExcel.jsp"></forward>
+			<forward name="ViewProductCatelogSCM" path="/OrderEntry/NewOrder/SCMProductCatalog.jsp"></forward>
+			<forward name="ViewProductCatelogSCMForUpdate" path="/OrderEntry/NewOrder/ViewProductCatalogForSCM.jsp"></forward>
+			<forward name="PRDetailsLookUp" path="/OrderEntry/NewOrder/PRDetails.jsp"></forward>
+			<forward name="dropNCarrySelection" path="/OrderEntry/NewOrder/dropNCarryOption.jsp"></forward>
+			<forward name="selectHeadEndCode" path="/OrderEntry/NewOrder/selectHeadEndCode.jsp"></forward>			
+		</action>
+	<!-- Action Mappings For Change Order -->	
+		<action name="newOrderBean" path="/ChangeOrderAction" type="com.ibm.ioes.actions.ChangeOrderAction" parameter="method" scope="request">
+			<forward name="DisplaySelectAccount" path="SelectAccount.jsp"></forward>
+			<forward name="DisplayChannelPartner" path="SelectChannelPartner.jsp"></forward>
+			<forward name="DisplaySelectCurrency" path="SelectCurrency.jsp"></forward>
+			<forward name="DisplayViewOpportunity" path="ViewOpportunity.jsp"></forward>
+			<forward name="DisplaySelectOpportunity" path="SelectOpportunity.jsp"></forward>
+			<forward name="DisplaySelectSource" path="SelectSource.jsp"></forward>
+			<forward name="DisplaySelectService" path="selectservice.do?method=fetchServiceType"></forward>
+			<forward name="ChangeOrderUpdateDisplay" path="/OrderEntry/ChangeOrder/ChangeOrder.jsp"></forward>
+			<forward name="failure" path="/OrderEntry/ChangeOrder/ChangeOrder.jsp"></forward>
+			<forward name="mainOrderEntryPage" path="/OrderEntry/ChangeOrder/ChangeOrder.jsp"></forward>
+			<forward name="DisplaySelectContactType" path="/OrderEntry/ChangeOrder/ChangeSelectContactType.jsp"></forward>
+			<forward name="DisplaySelectSalutation" path="/OrderEntry/ChangeOrder/ChangeSelectSalutation.jsp"></forward>
+			<forward name="DisplaySelectCountry" path="/OrderEntry/ChangeOrder/ChangeSelectCountry.jsp"></forward>
+			<forward name="DisplaySelectState" path="/OrderEntry/ChangeOrder/ChangeSelectState.jsp"></forward>
+			<forward name="DisplaySelectCity" path="/OrderEntry/ChangeOrder/ChangeSelectCity.jsp"></forward>
+			<forward name="forwardProductCatelog" path="/OrderEntry/ChangeOrder/ChangeProductCatelog.jsp"></forward>
+			<forward name="serviceAttributeListPage" path="/OrderEntry/ChangeOrder/ChangeServiceProductAttribute.jsp"></forward>
+			<forward name="DisplayHomePage" path="default.jsp"></forward>
+			<forward name="DisplayServiceNProduct" path="/OrderEntry/ChangeOrder/ServiceNProduct.jsp"></forward>
+			<forward name="goToServiceAttributeListPage" path="/workqueue/viewServiceProductAttribute.jsp"></forward>
+			<forward name="ProductCatelogForUpdate" path="/OrderEntry/ChangeOrder/ChangeViewProductCatelog.jsp"></forward>
+			<forward name="ChargesRenewalPage" path="/OrderEntry/ChangeOrder/ChargesRenewal.jsp"></forward>
+		    <forward name="DisplaySINumber" path="/OrderEntry/ChangeOrder/SelectLogicalsiNumber.jsp"></forward>
+		    <forward name="RateRenewal" path="/OrderEntry/ChangeOrder/ChangeRateRenewal.jsp"></forward>
+		    <forward name="displayAttachWorkflow" path="/workqueue/attachWorkflow.jsp"></forward>
+		    <forward name="displayOrderList_Change" path="/IncompleteOrder_Change.jsp"></forward>
+		    <forward name="displayOrderForChange" path="/OrderEntry/ChangeOrder/selectOrderForChange.jsp"></forward>		    
+			<forward name="DisplayChangeCopyOrderPage" path="/OrderEntry/ChangeOrder/ChangeCopyOrder.jsp"></forward>	
+			<forward name="DisplayViewChangeOrder" path="/NewOrderAction.do?method=incompleteOrder"></forward>
+			<forward name="DisplayDisconnectedCharge" path="/OrderEntry/ChangeOrder/CopyDisconnectedCharge.jsp"></forward>
+			
+			<forward name="DisplayOrderCancelReason" path="/OrderEntry/ChangeOrder/ChangeOrderCancellationReason.jsp"></forward>
+		</action>		
+		
+		<action name="UniversalWorkQueueLogicalFormBean" scope="request"
+			type="com.ibm.ioes.actions.UniversalWorkQueueAction" path="/universalWorkQueueAction" parameter="methodName">
+			<forward name="displayReportInExcel" path="/Reports/excelReport.jsp"></forward>						
+			<forward name="displayReportInExcelExt" path="/Reports/excelReportExt.jsp"></forward>										
+			<forward name="UniversalWorkQueueMainPage" path="/workqueue/universalWorkQueue.jsp"></forward>	
+			<forward name="viewUniversalWorkQueue" path="/workqueue/universalWorkQueue.jsp"></forward>
+			<forward name="viewBillingOrderQueueMainPage" path="/workqueue/billingWorkQueue.jsp"></forward>
+			<forward name="viewBillingOrderQueue" path="/workqueue/billingWorkQueue.jsp"></forward>		
+			<forward name="ErrorPageAction" path="/ErrorPage.jsp"></forward>
+			<forward name="createNewOrderWithExistingOrder" path="/OrderEntry/NewOrder/createNewOrderWithExisting.jsp"></forward>	
+			<forward name="QueryFormPage" path="queryForm.jsp"></forward>
+			<forward name="viewBillingOrderForChange" path="/workqueue/universalWorkQueueForChange.jsp"></forward>	
+			<forward name="viewDocumentTrackingList" path="/workqueue/documentTracking.jsp"></forward>	
+			<forward name="ReAssignToPM" path="/workqueue/reassignToPM.jsp"></forward>
+    		<forward name="ReAssignToAM" path="/workqueue/reassignToAM.jsp"></forward>
+			<forward name="Ib2bAccessMatrix" path="/workqueue/AccessMatrixiB2B.jsp"></forward>
+			<forward name="Ib2bChannelPartnerMaster" path="/workqueue/channelPartnerMasteriB2B.jsp"></forward>
+	    </action>
+	    	    	    
+	    <action name="ViewOrderLogicalFormBean" scope="request" type="com.ibm.ioes.actions.ViewOrderAction" path="/viewOrderAction" parameter="methodName">
+			<forward name="ViewOrderPage"
+				path="/workqueue/viewOrder.jsp">
+			</forward>
+			<forward name="ViewNotes"
+				path="/workqueue/SaveNotes.jsp">
+			</forward>
+			<forward name="ViewAction"
+				path="/workqueue/SelectTaskStatus.jsp">
+			</forward>
+			<forward name="ViewChangeOrderAction"
+				path="/workqueue/changeorderSelectTaskStatus.jsp">
+			</forward>
+			
+			<forward name="ViewAccountUpdateStatusPage"
+				path="/workqueue/ViewAccountUpdateStatus.jsp">
+			</forward>
+			
+			<forward name="ViewDisconnectionPage"
+				path="/workqueue/ViewDisconnectionDate.jsp">
+			</forward>
+			
+
+            <forward name="NewOrderUpdateDisplay" path="/OrderEntry/NewOrder/NewOrder.jsp"></forward>
+			
+			<forward name="ViewBillingTrigger"
+				path="/workqueue/BillingTriggerForNewOrder.jsp">
+			</forward>
+			<forward name="ViewChargeSummary"
+				path="/workqueue/ChargeSummary.jsp">
+			</forward>
+			<forward name="ViewOrderUpdateDisplay" path="/OrderEntry/NewOrder/viewOrder.jsp"></forward>
+			<forward name="ErrorPageAction"
+				path="/ErrorPage.jsp">
+			</forward>
+			<forward name="ViewBillingTriggerInFx"
+			    path="/workqueue/BillingTrigger_ForDisconnection.jsp">
+			    </forward>
+			    <forward name="ViewBillingTriggerForRateRenwal"
+			    path="/workqueue/BillingTrigger_ForRateRenwal.jsp">
+			    </forward>
+			    <forward name="ViewBillingTriggerForSolutionChange"
+			    path="/workqueue/BillingTrigger_ForSolutionChange.jsp"/>
+   			    <forward name="ViewBillingTriggerForChangeOrders"
+			    path="/workqueue/BillingTrigger_ForChangeOrders.jsp">
+			    </forward>
+			    <forward name="ExportChargeSummary" path="/workqueue/ExportChargeSummary.jsp"></forward>
+	    </action>
+	    
+	    	<!--  Master Entry Action -->
+		
+			<action path="/bcpAddress" name="bcpAddressBean"
+			type="com.ibm.ioes.actions.BCPAddressAction" parameter="method" scope="request" >			
+			<forward name="DisplaySearchAfterAdd" path="/bcpAddress.do?method=viewBCPList" redirect = "true"></forward>
+			<forward name="DisplaySelectAccountBCP" path="SelectAccountForBCPMstr.jsp"></forward>
+			<forward name="DisplaySelectAccountforReassignPM" path="SelectAccountForReassignPM.jsp"></forward>
+		    <forward name="DisplaySelectAccountforReassignAM" path="SelectAccountForReassignAM.jsp"></forward>
+			<forward name="DisplaySelectBCP" path="SelectBCPForMstr.jsp"></forward>
+			<forward name="addEditBCP" path="/MasterEntry/BillingAddEdit.jsp"></forward>
+		</action>
+		
+		
+		<action path="/bcpAddressMaster" name="bcpAddressBean"
+			type="com.ibm.ioes.actions.BCPAddressAction" parameter="method" scope="request" >
+			<forward name="DisplaySearch" path="/MasterEntry/searchBillingDetail.jsp" >	</forward>
+		</action>
+		
+		<action path="/accessMatrix" name="acessMatrixBean"
+			type="com.ibm.ioes.actions.RoleAcessMatrixAction" parameter="method" scope="request" >
+			<forward name="DisplayRoleAcessPage" path="/MasterEntry/RoleAcessMartix.jsp"></forward>
+		</action>
+		
+		
+		<action path="/networkLocation" name="networkLocationBean"
+			type="com.ibm.ioes.actions.NetworkLocationAction" parameter="method" scope="request" >
+			<forward name="DisplaySearch" path="/MasterEntry/searchNetworkLocation.jsp" >	</forward>
+			<forward name="DisplaySearchAfterAdd" path="/networkLocation.do?method=viewNetworkLocationList" redirect = "true">	</forward>
+			<forward name="addEditNetworkLocation" path="/MasterEntry/NetworkLocationAddEdit.jsp"></forward>
+		</action>
+		
+		<action path="/dispatchAddress" name="dispatchAddressBean"
+			type="com.ibm.ioes.actions.DispatchAddressAction" parameter="method" scope="request" >
+			<forward name="DisplaySearch" path="/MasterEntry/searchDispatchAddDetail.jsp" >	</forward>
+			<forward name="DisplaySearchAfterAdd" path="/dispatchAddress.do?method=viewDispatchAddressList" redirect = "true">	</forward>
+			<forward name="DisplaySelectAccount" path="SelectAccountForMstr.jsp"></forward>
+			<forward name="DisplaySelectDispatchAddress" path="SelectDispatchAddForMstr.jsp"></forward>
+			<forward name="addEditDispatchAddress" path="/MasterEntry/searchDispatchAddDetail.jsp"></forward>
+		</action>
+		
+		<action path="/customerLocation" name="locationDetailBean"
+			type="com.ibm.ioes.actions.CustomerLocationDetailAction" parameter="method" scope="request" >
+			<forward name="DisplaySearch" path="/MasterEntry/searchCustomerLoctionDetail.jsp" >	</forward>
+			<forward name="DisplaySearchAfterAdd" path="/customerLocation.do?method=viewCustomerLocationList" redirect = "true">	</forward>
+			<forward name="DisplaySelectAccount" path="SelectAccountForMstr.jsp"></forward>
+			<forward name="DisplaySelectLocation" path="SelectLocationForMstr.jsp"></forward>
+			<forward name="addEditLocation" path="/MasterEntry/searchCustomerLoctionDetail.jsp"></forward>
+			
+		</action>
+	<action path="/serviceAttributes" name="masterAttributesBean"
+			type="com.ibm.ioes.actions.ServiceAttributesAction" parameter="method" scope="request" >
+			<forward name="DisplayServiceAttributes" path="/MasterEntry/serviceAttributeDetail.jsp" >	</forward>
+		</action>
+
+		<action path="/productAttributes" name="masterAttributesBean"
+			type="com.ibm.ioes.actions.ProductAttributesAction" parameter="method" scope="request" >
+			<forward name="DisplayProductAttributes" path="/MasterEntry/productAttributeDetail.jsp" >	</forward>
+		</action>
+		<action path="/SendXmlToM6" type="com.ibm.ioes.actions.M6Action" parameter="method"> 	
+			<forward name="success" path="SendXmlToM6.jsp"/> 
+		</action>
+		
+		<action path="/FXScheduler" type="com.ibm.ioes.actions.FxSchedulerAction" parameter="method"> 	
+			<forward name="success" path="FXScheduler.jsp"/> 
+		</action>
+		
+		<action path="FXSchedulerforAddressChange" type="com.ibm.ioes.actions.FxSchedulerAction" parameter="method"> 	
+			<forward name="success" path="FXScheduler.jsp"/> 
+		</action>
+			<action path="/FXSchedulerforAutoBilling" type="com.ibm.ioes.actions.FxSchedulerAction" parameter="method"> 	
+			<forward name="autoBilling" path="FXScheduler.jsp"/>  
+		</action>
+		<action path="/pushLocDataToFx" type="com.ibm.ioes.actions.FxSchedulerAction" parameter="method"> 	
+			<forward name="pushLocDataToFx" path="FXScheduler.jsp"/>  
+		</action>
+		<action path="/FXSchedulerforRCCharges" type="com.ibm.ioes.actions.FxSchedulerAction" parameter="method"> 	
+			<forward name="RCChargessuccess" path="FXScheduler.jsp"/>  
+		</action>
+		
+		<action path="/FXSchedulerforNRCCharges" type="com.ibm.ioes.actions.FxSchedulerAction" parameter="method"> 	
+			<forward name="NRCChargessuccess" path="FXScheduler.jsp"/>  
+		</action>
+		
+		<action path="/FXSchedulerforDisconnection" type="com.ibm.ioes.actions.FxSchedulerAction" parameter="method"> 	
+					<forward name="success" path="FXScheduler.jsp"/>  
+		</action>
+		
+		<action path="/SchedularForAutoRenewalMail" type="com.ibm.ioes.actions.FxSchedulerAction" parameter="method"> 	
+			<forward name="autoRenewalMail" path="FXScheduler.jsp"/>  
+		</action>
+		
+		<action path="/reportsAction" name="reportsBean"
+			type="com.ibm.ioes.actions.ReportsAction" parameter="method" scope="request" >															
+			<forward name="DisplaySelectOrderStatus" path="/Reports/SelectOrderStatus.jsp"></forward>
+			<forward name="displayReportInExcel" path="/Reports/excelReport.jsp"></forward>						
+			<forward name="displayReportInExcelExt" path="/Reports/excelReportExt.jsp"></forward>						
+			<forward name="ViewM6ResponseHistory" path="/Reports/M6OrderResponseHistoryReport.jsp"></forward>			
+			<forward name="displayOrderStageReport" path="/Reports/OrderStageReport.jsp"></forward>
+			<forward name="displayReportInExcelForClepOrder" path="/Reports/excelReportForClepOrder.jsp"></forward>
+			<forward name="displayOrderClepReport" path="/Reports/OrderClepReport.jsp"></forward>	
+			<forward name="viewBillingWorkQueueReport" path="/Reports/BillingWorkQueueReport.jsp"></forward>
+			<forward name="displayPerformanceReport" path="/Reports/PerformanceReport.jsp"></forward>			
+			<forward name="displayTelemediaOrderReport" path="/Reports/TelemediaOrderReport.jsp"></forward>
+			<forward name="displayPerformanceSummaryReport" path="/Reports/PerformanceSummaryReport.jsp"></forward>
+			<forward name="displayPendingServicesReport" path="/Reports/PendingServicesReport.jsp"></forward>
+			<forward name="displayNonMigAppUnappNewOrderDetails" path="/Reports/NonMigratedAPP_UNAPPNewOrderDetails.jsp"></forward>
+			<forward name="displayNonAppAppChangeOrderDetails" path="/Reports/NonAPP_APPChangeOrderDetails.jsp"></forward>
+			<forward name="displayStartChargeNotPushedInFx" path="/Reports/StartChargeNotPushedFX.jsp"></forward>
+			<forward name="displayLogicalSIDataReport" path="/Reports/LogicalSIDataReport.jsp"></forward>
+			<forward name="displayBillingTriggerDoneButFailedInFX" path="/Reports/BillingTriggerDoneButFailedInFX.jsp"></forward>
+			<forward name="orderActiveLineItemsList" path="/Reports/ActiveLineItemsReport.jsp"></forward>		
+			<forward name="orderReportNewList" path="/Reports/OrderReportNew.jsp"></forward>	
+			<forward name="orderReportChangeList" path="/Reports/OrderReportChange.jsp"></forward>
+			<forward name="orderReportDetailList" path="/Reports/OrderReportDetail.jsp"></forward>
+			<forward name="displayPendingOrderAndBillingReport" path="/Reports/PendingOrderAndBillingReport.jsp"></forward>
+			<forward name="pendingOrderBillingItemsList" path="/Reports/PendingOrderBill.jsp"></forward>		
+			<forward name="DisplayCancalCopyReport" path="/Reports/CancalCopyReport.jsp"></forward>	
+			
+     <!-- Vijay.  add new mapping for cancel copy report with excel export facility  	-->
+     		<forward name="displayActiveLineDemoReportInExcelExt" path="/Reports/activeDemoReport.jsp"></forward>
+			<forward name="copyCancelReport" path="/Reports/CancalCopyReport_New.jsp"></forward>	
+			<forward name="displayNetworkLocsReport" path="/Reports/NetworkLocationReport.jsp"></forward>
+			<forward name="displayContactReport" path="/Reports/ContactReport.jsp"></forward>	
+			<forward name="displayOrderReport" path="/Reports/OrderStatusReport.jsp"></forward>
+            <forward name="DisplayM6OrderCancelReport" path="/Reports/M6CancelledReport.jsp"></forward>                                          <forward name="displayM6OrderStatusReport" path="/Reports/M6OrderStatusReport.jsp"></forward>
+			<forward name="displayBCPReport" path="/Reports/BCPAddressReport.jsp"></forward>
+			<forward name="displayDispatchAddressReport" path="/Reports/DispatchDetailsReport.jsp"></forward>
+			<forward name="displayPerformanceDetailReport" path="/Reports/PerformanceDetailReport.jsp"></forward>		
+			<forward name="zeroOrderValueReport" path="/Reports/ZeroOrderValueReport.jsp"></forward>		
+			<forward name="rateRenewalReport" path="/Reports/RateRenewalReport.jsp"></forward>	
+			<forward name="RestPendingLineReport" path="/Reports/RestPendingLineReports.jsp"></forward>	
+			<forward name="DisconnectLineReport" path="/Reports/DISCONNECTIONLINEREPORT.jsp"></forward>
+			<forward name="CancelledFailedLineReport" path="/Reports/CANCELLEDFAILEDREPORT.jsp"></forward>					
+			<forward name="BulkSIUploadReport" path="/Reports/BulkSIUpload.jsp"></forward>
+			<forward name="AttributeDetailsReport" path="/Reports/AttributeDetails.jsp"></forward>
+			<forward name="DisconnectChangeOrderReport" path="/Reports/DisconnectionChangeOrderReport.jsp"></forward>		
+			<forward name="displayMigAppNewOrderDetails" path="/Reports/MigratedApprovedNewOrderDetail.jsp"></forward>		
+			<forward name="LEPMOwnerReport" path="/Reports/LEPMOwnerReport.jsp"></forward>	
+			<forward name="DisplayLEPMOrderCancelReport" path="/Reports/LEPMCancelOrderReport.jsp"></forward>	
+			<forward name="DisplayLEPMOrderReport" path="/Reports/LEPMOrderDetailReport.jsp"></forward>	
+			<forward name="DisplayPendingBillingPDOrderReport" path="/Reports/PermanentDisconnectionReport.jsp"></forward>			
+			<forward name="viewLSIMapping" path="/OrderEntry/ChangeOrder/LSIMapping.jsp"></forward>
+			<forward name="viewLSIMappingExcel" path="/Reports/excelReportExt.jsp"></forward>
+			<forward name="DisplaySelectParty" path="/Reports/SelectPartyFor_BillWorkQueue.jsp"></forward>
+			<forward name="DisplayCancelLineItemReport" path="/Reports/CancelHardwareLineItemReport.jsp"></forward>
+			<forward name="DisplayRequestHistory" path="/Reports/RequestHistory.jsp"></forward>
+			<forward name="DisplayCancelledhardwareLineReportExcel" path="/Reports/excelCancelledHardwareLineReports.jsp"></forward>
+			<!-- vijay add a action for pending line report -->   
+			<forward name="PendingLineReport" path="/Reports/PendingLineReports.jsp"></forward>	
+			<forward name="displayAdvancePaymentReport" path="/Reports/Advance Payment _OTC Report.jsp"></forward>	
+     		<forward name="displayAdvancePaymentInExcelExt" path="/Reports/ExlAdvancePaymentReport.jsp"></forward>
+     		<forward name="displayBTLineItemData" path="/Reports/ExportBTLineItemData.jsp"></forward>
+     		<forward name="DisplayActiveLineDemoReport" path="/Reports/ActiveLineDemoReport.jsp"></forward>
+     		<forward name="OBValueReport" path="/Reports/OBValueReport.jsp"></forward>
+     		<forward name="displayOBReportInExcelExt" path="/Reports/exlOBValueReport.jsp"></forward>
+			<forward name="changePMWelcomeMail" path="/Reports/selectPMMailUpdate.jsp"></forward> 
+     		<forward name="displayDummyLineDetailsReport" path="/Reports/DummyLineDetailsReport.jsp"></forward>
+     		<forward name="DocumentMatrixReport" path="/Reports/DocumentMatrixReport.jsp"></forward>
+     		<forward name="displayDocMatrixReportInExcel" path="/Reports/excelDocumentMatrixReport.jsp"></forward>
+     		<forward name="AccessMatrixReport" path="/Reports/AccessMatrixReport.jsp"></forward>
+     		<forward name="DisplayAccessMatrixReportInExcel" path="/Reports/ExcelAccessMatrixReport.jsp"></forward>	
+     		<!-- Varun Start -->
+        	 <forward name="reportDraftOrder" path="/Reports/ReportDraftOrder.jsp"></forward>  
+     		 <forward name="reportDraftOrderInExcelExt" path="/Reports/ReportDraftOrderInExcelExt.jsp" ></forward> 
+     		 <forward name="pdReportOrder" path="/Reports/PDArchivalOrder.jsp"></forward>  
+     		 <forward name="pdReportOrderInExcelExt" path="/Reports/PDDraftOrderInExcelExt.jsp" ></forward> 
+     		 <forward name="cancelledReportOrder" path="/Reports/CancelledArchivalNewOrder.jsp"></forward>  
+     		 <forward name="cancelledReportOrderInExcelExt" path="/Reports/CancelledArchivalNewOrderInExcelExt.jsp" ></forward>
+     		 <!-- priya Start -->
+     		 <forward name="displayParallelUpgradeReport" path="/Reports/ParallelUpgradeReport.jsp"></forward>
+     		 <!-- priya end -->
+     		<!-- Varun End -->
+		</action>
+		<action path="/reportsAction_Usage" name="reportsBean"
+			type="com.ibm.ioes.actions.ReportsAction_Usage" parameter="method" scope="request" >															
+			<forward name="displayReportInExcel" path="/Reports/excelReport_Usage.jsp"></forward>						
+			<forward name="displayReportInExcelExt" path="/Reports/excelReportExt_Usage.jsp"></forward>						
+			<forward name="displayNonMigAppUnappNewOrderDetails" path="/Reports/NonMigratedAPP_UNAPPNewOrderDetails_Usage.jsp"></forward>
+			<forward name="displayNonAppAppChangeOrderDetails" path="/Reports/NonAPP_APPChangeOrderDetails_Usage.jsp"></forward>
+			<forward name="displayStartChargeNotPushedInFx" path="/Reports/StartChargeNotPushedFX_Usage.jsp"></forward>
+			<forward name="displayLogicalSIDataReport" path="/Reports/LogicalSIDataReport_Usage.jsp"></forward>
+			<forward name="displayBillingTriggerDoneButFailedInFX" path="/Reports/BillingTriggerDoneButFailedInFX_Usage.jsp"></forward>
+			<forward name="orderActiveLineItemsList" path="/Reports/ActiveLineItemsReport_Usage.jsp"></forward>		
+			<forward name="displayPendingOrderAndBillingReport" path="/Reports/PendingOrderAndBillingReport_Usage.jsp"></forward>
+			<forward name="rateRenewalReport" path="/Reports/RateRenewalReport_Usage.jsp"></forward>	
+			<forward name="RestPendingLineReport" path="/Reports/RestPendingLineReports_Usage.jsp"></forward>	
+			<forward name="DisconnectLineReport" path="/Reports/DISCONNECTIONLINEREPORT_Usage.jsp"></forward>
+			<forward name="CancelledFailedLineReport" path="/Reports/CANCELLEDFAILEDREPORT_Usage.jsp"></forward>					
+			<forward name="DisconnectChangeOrderReport" path="/Reports/DisconnectionChangeOrderReport_Usage.jsp"></forward>		
+			<forward name="displayMigAppNewOrderDetails" path="/Reports/MigratedApprovedNewOrderDetail_Usage.jsp"></forward>		
+			<forward name="CustomerBaseReport" path="/Reports/CustomerbaseReport.jsp"></forward>
+			<forward name="exlPendingOrderAndBillingReport_Usage" path="/Reports/exlPendingOrderAndBillingReport_Usage.jsp"></forward>
+			<forward name="exlRestPendingLineReport_Usage" path="/Reports/exlRestPendingLineReport_Usage.jsp"></forward>
+			<forward name="exlStartChargeNotPushInFXReport_Usage" path="/Reports/exlStartChargeNotPushInFXReport_Usage.jsp"></forward>
+			<forward name="exlNonMigAppUnAppNewOrderReport_Usage" path="/Reports/exlNonMigAppUnAppNewOrderReport_Usage.jsp"></forward>
+			<forward name="exlNonMigAppUnAppChangeOrderReport_Usage" path="/Reports/exlNonMigAppUnAppChangeOrderReport_Usage.jsp"></forward>
+			<forward name="exlDisconnectionChangeOrderReport_Usage" path="/Reports/exlDisconnectionChangeOrderReport_Usage.jsp"></forward>
+			<forward name="exlBTDoneButComptFailedInFxReport_Usage" path="/Reports/exlBTDoneButComptFailedInFxReport_Usage.jsp"></forward>
+			<forward name="exlMigAppNewOrderReport_Usage" path="/Reports/exlMigAppNewOrderReport_Usage.jsp"></forward>
+			<forward name="exlActiveLineReport_Usage" path="/Reports/exlActiveLineReport_Usage.jsp"></forward>
+			<forward name="exlLogicalLsiDataReport_Usage" path="/Reports/exlLogicalLsiDataReport_Usage.jsp"></forward>
+			<forward name="exlCancelFailedReport_Usage" path="/Reports/exlCancelFailedReport_Usage.jsp"></forward>
+			<forward name="exlDisconnLineItemReport_Usage" path="/Reports/exlDisconnLineItemReport_Usage.jsp"></forward>
+			<forward name="exlRateRenwalReport_Usage" path="/Reports/exlRateRenwalReport_Usage.jsp"></forward>
+			<forward name="exlCustomerBaseReport" path="/Reports/exlCustomerBaseReport.jsp"></forward>
+			<forward name="exlOrderReportNew_Usage" path="/Reports/exlOrderReportNew_Usage.jsp"></forward>
+			<forward name="orderReportNewListUsage" path="/Reports/OrderReportNew_Usage.jsp"></forward>
+			<forward name="viewBillingWorkQueueReport" path="/Reports/BillingWorkQueueReport_Usage.jsp"></forward>
+			<forward name="OBValueReport_Usage" path="/Reports/OBValueReport_Usage.jsp"></forward>
+			<forward name="displayOBReportInExcel_Usage" path="/Reports/exlOBValueReport_Usage.jsp"></forward>
+		</action>		
+		<action path="/siTransfer" name="siTransferBean"
+			type="com.ibm.ioes.actions.SITransferAction" parameter="method" scope="request" >															
+		<forward name="DisplaySITransferPage" path="/OrderEntry/SITransfer/SITransfer.jsp"></forward>
+		<forward name="DisplaySelectParty" path="/OrderEntry/SITransfer/SelectParty.jsp"></forward>
+		<forward name="DisplaySelectLogicalSI" path="/OrderEntry/SITransfer/SelectLogicalSI.jsp"></forward>
+				<forward name="DisplaySelectAccount" path="/OrderEntry/SITransfer/SelectAccount.jsp"></forward>
+		<forward name="DisplaySelectBcpInfo" path="/OrderEntry/SITransfer/SelectBcpAddress.jsp"></forward>
+				<forward name="DisplaySelectDispatchInfo" path="/OrderEntry/SITransfer/SelectDispatchAdd.jsp"></forward>
+		
+		<forward name="DisplayViewSITransferPage" path="/OrderEntry/SITransfer/ViewSITransfer.jsp"></forward>
+		<forward name="DisplayDraftSITransferPage" path="/OrderEntry/SITransfer/ViewSITransferData.jsp"></forward>
+		</action>
+		
+		<action path="/currencyChange" name="currencyChangeBean"
+			type="com.ibm.ioes.actions.CurrencyChangeAction" parameter="method" scope="request" >															
+		<forward name="DisplayCurrencyChangePage" path="/OrderEntry/CurrencyChange/CurrencyChange.jsp"></forward>
+		<forward name="DisplaySelectParty" path="/OrderEntry/CurrencyChange/SelectPartyFor_CurrencyChange.jsp"></forward>
+		<forward name="DisplaySelectLogicalSI" path="/OrderEntry/CurrencyChange/SelectLogicalSIFor_CurrencyChange.jsp"></forward>
+		<forward name="DisplaySelectAccount" path="/OrderEntry/CurrencyChange/SelectAccount.jsp"></forward>
+		<forward name="DisplaySelectBcpInfo" path="/OrderEntry/SITransfer/SelectBcpAddress.jsp"></forward>
+		<forward name="DisplaySelectDispatchInfo" path="/OrderEntry/SITransfer/SelectDispatchAdd.jsp"></forward>
+		
+		<forward name="DisplayViewCurrencyChangePage" path="/OrderEntry/CurrencyChange/ViewCurrencyChange.jsp"></forward>
+		<forward name="DisplayDraftCurrencyChangePage" path="/OrderEntry/CurrencyChange/ViewCurrencyChangeData.jsp"></forward>
+		<forward name="DisplayAccountForBulk" path="SelectAccountForBulkUpload.jsp"></forward>
+		<forward name="DisplayLSIForBulk" path="SelectLSIForBulkUpload.jsp"></forward>
+		</action>
+		
+		<action path="/reportsCustLocationAction" name="reportsBean"
+			type="com.ibm.ioes.actions.ReportsAction" parameter="method" scope="request" >
+			<forward name="displayCustomerLocationReport" path="/Reports/CustomerLocationReport.jsp"></forward>
+		</action>
+		
+		<action path="/reportsNetLocationAction" name="reportsBean"
+			type="com.ibm.ioes.actions.ReportsAction" parameter="method" scope="request" >
+			<forward name="displayNetworkLocsReport" path="/Reports/NetworkLocationReport.jsp"></forward>
+		</action>
+		
+		<action path="/reportsContactAction" name="reportsBean"
+			type="com.ibm.ioes.actions.ReportsAction" parameter="method" scope="request" >
+			<forward name="displayContactReport" path="/Reports/ContactReport.jsp"></forward>
+		</action>				
+		
+		<action path="/reportsOrderStatusAction" name="reportsBean"
+			type="com.ibm.ioes.actions.ReportsAction" parameter="method" scope="request" >
+			<forward name="displayOrderReport" path="/Reports/OrderStatusReport.jsp"></forward>
+		</action>
+		
+		<action path="/reportsOrdStatusM6Action" name="reportsBean"
+			type="com.ibm.ioes.actions.ReportsAction" parameter="method" scope="request" >
+			<forward name="displayM6OrderStatusReport" path="/Reports/M6OrderStatusReport.jsp"></forward>
+		</action>
+		
+		<action path="/reportsBCPAction" name="reportsBean"
+			type="com.ibm.ioes.actions.ReportsAction" parameter="method" scope="request" >
+			<forward name="displayBCPReport" path="/Reports/BCPAddressReport.jsp"></forward>
+		</action>
+		
+		<action path="/reportsDispatchAddAction" name="reportsBean"
+			type="com.ibm.ioes.actions.ReportsAction" parameter="method" scope="request" >
+			<forward name="displayDispatchAddressReport" path="/Reports/DispatchDetailsReport.jsp"></forward>
+		</action>
+		
+		<action path="/reportsMasterAction" name="reportsBean"
+			type="com.ibm.ioes.actions.ReportsAction" parameter="method" scope="request" >
+			<forward name="DisplayMasterReports" path="/Reports/SelectMaster.jsp"></forward>
+		</action>
+		
+		
+		
+		<action path="/mainAttributesAction" name="masterAttributesBean"
+			type="com.ibm.ioes.actions.MainAttributesAction" parameter="method" scope="request" >
+			<forward name="DisplayMainAttributes" path="/MasterEntry/MainAttributes.jsp" >	</forward>
+		</action>
+		<action path="/productConfiguratorAction" name="masterAttributesBean"
+			type="com.ibm.ioes.actions.ProductConfiguratorAction" parameter="method" scope="request" >
+			<forward name="DisplayProductConfigurator" path="/MasterEntry/ProductConfigurator.jsp" >	</forward>
+		</action>
+		
+		<action path="/changeOrder" name="changeOrderTypeBean"
+			type="com.ibm.ioes.actions.ChangeOrderTypeAction" parameter="method" scope="request" >
+			<forward name="DisplayChangeOrderType" path="/MasterEntry/changeOrderType.jsp" >	</forward>
+			<forward name="DisplayChangeOrderTypeAfterAdd" path="/changeOrder.do?method=getChangeOrderType" redirect="true">	</forward>
+		</action>
+		
+		<!-- test fx connection on production -->
+		<action path="/FindAccount" type="com.ibm.ioes.actions.FxSchedulerAction" parameter="method">
+			
+			<forward name="success" path="FXScheduler.jsp"/>
+		
+		</action>
+		<action path="/ApplicationPerformanceLog" type="com.ibm.ioes.actions.ApplicationUtilityAction" parameter="method">
+			
+			<forward name="success" path="FXScheduler.jsp"/>
+		
+		</action>
+		
+		
+		
+		
+	<!-- Bulk Uplodoad Action Starts Here -->
+		<action name="bulkUploadBean" path="/transactionUploadAction" 
+			type="com.ibm.ioes.bulkupload.actions.TransactionUploadAction" parameter="methodName" scope="request">
+			<forward name="BulkUploadPage" path="/OrderEntry/ChangeOrder/changeorderbulkupload/BulkUploadiB2B.jsp"></forward>			
+			<forward name="SearchForPage" path="/OrderEntry/ChangeOrder/changeorderbulkupload/SearchForBulkUpload.jsp"></forward>			
+			<forward name="viewBulkSelectedValue" path="/OrderEntry/ChangeOrder/changeorderbulkupload/viewBulkLSIWindow.jsp"></forward>	
+		</action>
+			<action name="transactionValidationFormBean" path="/transactionValidate" scope="request" type="com.ibm.ioes.bulkupload.actions.TransactionValidationAction" parameter="methodName">
+			<forward name="transactionValidate" path="/OrderEntry/ChangeOrder/changeorderbulkupload/transactionValidate.jsp"></forward>			
+			<forward name="transactionValidateError" path="ErrorPage.jsp"></forward>
+		</action>
+		<!-- Bulk Uplodoad Action Starts Here -->
+	</action-mappings>
+
+	<!-- Controller Helper Classes -->
+	<controller
+		processorClass="com.ibm.ioes.utilities.IOES_RequestProcessor">
+	</controller>
+
+	<!-- Message Resources -->
+	<message-resources parameter="ApplicationResources" />
+		<message-resources parameter="ApplicationResources" />
+	<message-resources parameter="ButtonResources"
+		key="ButtonResources" />
+	<message-resources parameter="FieldResources" key="FieldResources" />
+	<message-resources parameter="Escalation" key="Escalation" />
+	
+	<!-- Query plugin -->
+	<!--<plug-in className="com.ibm.appsecure.plugin.QueryPlugin"></plug-in> -->
+
+	<!-- Validator plugin -->
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/org/apache/struts/validator/validator-rules.xml,/WEB-INF/validation.xml" />
+		<set-property property="stopOnFirstError" value="false" />
+	</plug-in>
+	
+	 <plug-in className="com.ibm.ioes.schedular.ApplicationPlugin"></plug-in> 
+	<!-- <plug-in className="com.ibm.ioes.ei.m6.M6PlugIn"></plug-in>
+	<plug-in className="com.ibm.appsecure.plugin.QueryPlugin"></plug-in> 
+	<plug-in className="com.ibm.ioes.utilities.ECRM_PlugIn"></plug-in>
+	<plug-in className="com.ibm.fx.mq.FXSchedulerPlugIn"></plug-in>
+	<plug-in className="com.ibm.ioes.utilities.UtilityPlugIn"></plug-in>
+	<plug-in className="com.ibm.ioes.schedular.AutoRenewalMailPlugin"></plug-in>
+	<plug-in className="com.ibm.ioes.clep.CLEPPlugIn"></plug-in>
+	<plug-in className="com.ibm.ioes.schedular.AutoCreationDisOrderPlugin"></plug-in>
+	<plug-in className="com.ibm.ioes.schedular.CancelAutoDisOrderPlugin"></plug-in>
+	<plug-in className="com.ibm.ioes.schedular.DraftOrderMailPlugin"></plug-in>
+	<plug-in className="com.ibm.ioes.schedular.RMEscalationMailPlugin"></plug-in>
+	<plug-in className="com.ibm.ioes.schedular.DemoDaysDisconnectionPlugin"></plug-in>
+	<plug-in className="com.ibm.ioes.schedular.LepmLocDataUpdatePlugin"></plug-in>
+	<plug-in className="com.ibm.ioes.schedular.DemoDaysAlertPlugin"></plug-in>
+	<plug-in className="com.ibm.ioes.schedular.BulkUploadPlugin"></plug-in>
+	<plug-in className="com.ibm.ioes.utilities.Sharepoint_Plugin"></plug-in> --> 
+
+	
+</struts-config>

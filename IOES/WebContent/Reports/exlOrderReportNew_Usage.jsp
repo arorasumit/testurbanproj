@@ -1,0 +1,63 @@
+<%@taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
+<%@taglib uri="http://struts.apache.org/tags-bean" prefix="bean"%>
+<%@taglib uri="http://struts.apache.org/tags-logic" prefix="logic"%>
+<html:html>
+<head>
+<%
+response.setContentType("application/vnd.ms-excel");
+%>
+</head>
+var isUsage ="<%= request.getAttribute("isUsage") %>";
+<body>
+<logic:present name="orderReportNewListExcel" scope="request">
+<% response.setHeader("content-Disposition","attachment;filename=OrderDetailsNewReportUsage.xls"); %>
+<table width="100%" border="1" cellpadding="0" cellspacing="0">
+<tr><td colspan="25" align="left" style="font-size:10px"><strong>ORDER DETAIL NEW REPORT USAGE</strong></td></tr><logic:equal name="isUsage" value="1"><tr><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Party Name</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Order No</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>COPC Approval Date</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Logical Ckt Id</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Service No</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Quote No</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Product Name</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Sub Product Name</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>From Site</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>To Site</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Order Sub Type</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Bandwidth</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Project Mgr</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>project Mgr Email</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Account Mgr</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Zone</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Region</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Vertical</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Account Category</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Customer PoNumber</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Customer PoDate</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Order Date</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>PM Approval Date</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Account Mgr Date</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Copc Approval Date</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Last Approval Remarks</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Demo InfraStartDate</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Demo InfraEndDate</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Customer Rfs Date</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Order Category</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Order Reporting Status</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Line Item Name</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Line Item Id</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Service Name</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Account No</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Legal Entity</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Licence Company</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Contract Period</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>UOM</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Billing Bandwidth</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Billing Uom</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>From City</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>To City</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Ratio</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Taxation</b></td><td align="center" style="font-size:9px" bgcolor="#FF9255"><b>TaxExcemption Reason</b></td>		<td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Kms Distance</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Account Mgr EmailId</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Currency</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Order Total</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Po Amt</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>BiSource</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Order Type</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Parent Name</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Child Account Number</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Child Account No Internal</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Child Account Fx Status</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Package ID</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Package Name</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Component ID</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Component Name</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Component InfoID</b></td><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Component Type</b></td><%--<td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>rental / nrc component amount</b></td>--%><td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Component Status</b></td>
+<td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>OSP</b></td>
+<td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Opportunity Id</b></td>
+<td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Re-logged LSI No</b></td>
+<td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Parallel Upgrade LSI No</b></td>
+<td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Charge Disconnection Status</b></td>
+<td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Sub Change Type</b></td>
+<td align="center" style="font-size:9px"  bgcolor="#FF9255"><b>Fx Account External Id</b></td>
+<td align="center" style="font-size:9px" bgcolor="#FF9255"><b>Customer Segment Description</b></td>
+<!-- Nagarjuna OB Value Usage -->
+<td align="center" style="font-size:9px" bgcolor="#FF9255"><b>OB Value</b></td>
+<td align="center" style="font-size:9px" bgcolor="#FF9255"><b>OB Value Last Update Date</b></td>
+<!-- End OB Value Usage -->
+<!-- nancy start --> <td align="center" style="font-size:9px" bgcolor="#FF9255"><b>ePCN NO. </b></td> 
+<td align="center" style="font-size:9px" bgcolor="#FF9255"><b>Biiling Trigger Create Date</b></td>
+<!-- nancy end -->
+</tr>
+</logic:equal>
+<logic:empty name="orderReportNewListExcel">
+<tr><td colspan="25" align="center" style="font-size:10px;color:red;"><strong>No Records Found</strong></td></tr>
+</logic:empty>
+<logic:notEmpty  name="orderReportNewListExcel" scope="request"> 					
+<logic:iterate id="row" name="orderReportNewListExcel" indexId="recordId">
+<logic:equal name="isUsage" value="1">
+<tr><td><bean:write  name="row" property="partyName"/></td><td><bean:write  name="row" property="orderNo"/></td><td><bean:write  name="row" property="copcApproveDate"/></td><td><bean:write  name="row" property="logicalCircuitId"/></td><td><bean:write  name="row" property="serviceId"/></td><td><bean:write  name="row" property="quoteNo"/></td><td><bean:write  name="row" property="productName"/></td><td><bean:write  name="row" property="subProductName"/></td><td><bean:write  name="row" property="primarylocation"/></td><td><bean:write  name="row" property="seclocation"/></td><td><bean:write  name="row" property="ordersubtype"/></td><td><bean:write  name="row" property="bandwaidth"/></td><td><bean:write  name="row" property="prjmngname"/></td><td><bean:write name="row" property="prjmgremail"/></td><td><bean:write  name="row" property="actmngname"/></td><td><bean:write  name="row" property="zoneName"/></td><td><bean:write  name="row" property="regionName"/></td><td><bean:write  name="row" property="verticalDetails"/></td><td><bean:write  name="row" property="act_category"/></td><td><bean:write name="row" property="custPoDetailNo"/></td><td><bean:write  name="row" property="custPoDate"/></td><td><bean:write  name="row" property="orderDate"/></td><td><bean:write  name="row" property="pmApproveDate"/></td><td><bean:write  name="row" property="amApproveDate"/></td><td><bean:write  name="row" property="nio_approve_date"/></td><td><bean:write  name="row" property="lastApprovalRemarks"/></td><td><bean:write  name="row" property="demo_infrastartdate"/></td><td><bean:write  name="row" property="demo_infra_enddate"/></td><td><bean:write  name="row" property="rfs_date"/></td><td><bean:write name="row" property="ordercategory"/></td><td><bean:write name="row" property="orderStatus"/></td><td><bean:write name="row" property="linename"/></td><td><bean:write name="row" property="serviceProductID"/></td><td><bean:write name="row" property="serviceName"/></td><td><bean:write name="row" property="accountID"/></td><td><bean:write name="row" property="entity"/></td><td><bean:write name="row" property="licCompanyName"/></td><td><bean:write name="row" property="contractPeriod"/></td><td><bean:write name="row" property="uom"/></td><td><bean:write name="row" property="billing_bandwidth"/></td><td><bean:write name="row" property="billing_uom"/></td><td><bean:write name="row" property="from_city"/></td><td><bean:write name="row" property="to_city"/></td><td><bean:write name="row" property="ratio"/></td><td><bean:write name="row" property="taxation"/></td><td ><bean:write  name="row" property="taxExcemption_Reason"/></td>
+<td><bean:write name="row" property="distance"/></td><td><bean:write name="row" property="accountManager"/></td><td><bean:write name="row" property="currencyCode"/></td><td><bean:write name="row" property="orderTotal"/></td><td><bean:write name="row" property="poAmount"/></td><td><bean:write name="row" property="bisource"/></td><td><bean:write name="row" property="orderType"/></td><td><bean:write name="row" property="parent_name"/></td><td><bean:write  name="row" property="fx_external_acc_id"/></td><td><bean:write  name="row" property="fxInternalId"/></td><td><bean:write  name="row" property="child_account_creation_status"/></td><td><bean:write  name="row" property="packageID"/></td><td><bean:write  name="row" property="packageName"/></td><td><bean:write  name="row" property="componentID"/></td><td><bean:write  name="row" property="componentName"/></td><td><bean:write  name="row" property="componentInfoID"/></td><td><bean:write  name="row" property="componentDto.componentType"/></td><%--<td><bean:write  name="row" property="componentDto.componentAmount"/></td>--%><td><bean:write  name="row" property="componentDto.componentStatus"/></td>
+<td><bean:write  name="row" property="osp"/></td>
+<td><bean:write  name="row" property="opportunityId"/></td>
+<td><bean:write  name="row" property="RE_LOGGED_LSI_NO"/></td>
+<td><bean:write  name="row" property="PARALLEL_UPGRADE_LSI_NO"/></td>
+<td><bean:write  name="row" property="CHARGEDISCONNECTIONSTATUS"/></td>
+<td><bean:write  name="row" property="subchange_type"/></td>
+<td><bean:write  name="row" property="fxAccountExternalId"/></td>
+<td><bean:write name="row" property="custSeg_Description"/></td>
+<!-- Nagarjuna OB Value Usage -->
+<td><bean:write name="row" property="obValue" /></td>
+<td><bean:write name="row" property="obValueLastUpdateDate" /></td>	
+<!-- End OB Value Usage -->
+<!-- nancy start --><td><bean:write name="row" property="ePCNNo" /></td>
+<td><bean:write name="row" property="billingTriggerCreateDate" /></td>
+<!-- nancy end -->
+</tr>
+</logic:equal>
+</logic:iterate>
+</logic:notEmpty>
+</table>
+</logic:present>
+</body>
+</html:html>

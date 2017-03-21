@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 9, 2009 11:12:38 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+	<class name="com.ibm.ioes.npd.hibernate.beans.TmWorkflowstageHistory"
+		table="TM_WORKFLOWSTAGEHISTORY">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="identity" />
+		</id>
+		<property name="stageid" type="int">
+			<column name="STAGEID" />
+		</property>
+		<many-to-one name="workflowhistoryid"
+			class="com.ibm.ioes.npd.hibernate.beans.TmWorkflowHistory" lazy="false">
+			<column name="WORKFLOWHISTORYID" />
+		</many-to-one>
+
+		<property name="workflow1" type="int">
+			<column name="WORKFLOWID" />
+		</property>
+		<property name="stagename" type="string">
+			<column name="STAGENAME" length="50" />
+		</property>
+		<property name="stagedesc" type="string">
+			<column name="STAGEDESC" length="100" />
+		</property>
+		<property name="createdby" type="int">
+			<column name="CREATEDBY" not-null="true" />
+		</property>
+		<property name="createddate" type="timestamp">
+			<column name="CREATEDDATE" length="26" not-null="true" />
+		</property>
+		<property name="modifiedby" type="java.lang.Integer">
+			<column name="MODIFIEDBY" />
+		</property>
+		<property name="modifieddate" type="date">
+			<column name="MODIFIEDDATE" length="10" />
+		</property>
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2010 10:30:25 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+    <class name="com.ibm.ioes.npd.hibernate.beans.TtrnProjectworkflowdet" table="TTRN_PROJECTWORKFLOWDET">
+        <id name="projectwfid" type="long">
+            <column name="PROJECTWFID" />
+            <generator class="assigned" />
+        </id>
+        <property name="projecttype" type="int">
+            <column name="PROJECTTYPE" not-null="true" />
+        </property>
+        <property name="projectid" type="java.lang.Long">
+            <column name="PROJECTID" />
+        </property>
+        <property name="createddate" type="timestamp">
+            <column name="CREATEDDATE" length="26" not-null="true" />
+        </property>
+        <property name="createdby" type="long">
+            <column name="CREATEDBY" not-null="true" />
+        </property>
+        <property name="modifieddate" type="timestamp">
+            <column name="MODIFIEDDATE" length="26" />
+        </property>
+        <property name="modifiedby" type="java.lang.Long">
+            <column name="MODIFIEDBY" />
+        </property>
+        <property name="isactive" type="int">
+            <column name="ISACTIVE" not-null="true" />
+        </property>
+        <property name="projectworkflowid" type="java.lang.Long">
+            <column name="PROJECTWORKFLOWID" />
+        </property>
+    </class>
+</hibernate-mapping>

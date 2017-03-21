@@ -1,0 +1,269 @@
+
+#tabmenu a {
+	color: #000000;
+	font-family:Arial, Geneva, sans-serif;
+	font-size:12px;
+}
+
+#tabmenu li li {
+	font-size: 12px;
+}
+
+#tabmenu li:hover ul, 
+#tabmenu li li:hover ul, 
+#tabmenu li li li:hover ul, 
+#tabmenu li li li li:hover ul,
+#tabmenu li.sfHover ul, 
+#tabmenu li li.sfHover ul, 
+#tabmenu li li li.sfHover ul,
+#tabmenu li li li li.sfHover ul {
+	background: #90B822;
+}
+/*PARENT ITEM SEPARATOR*/
+#tabmenu ul li {
+	
+}
+#tabmenu li a {
+	
+}
+/*DEFINE HOVER COLORS*/
+
+#tabmenu li:hover a,
+#tabmenu li.sfHover a {
+	color: #ffffff;
+}
+#tabmenu ul li a:hover {
+	color: #ffffff;
+}
+#tabmenu ul li ul li a:hover,
+#tabmenu ul li ul li ul li a:hover {
+	color: #ffffff;
+}
+#tabmenu ul ul a {
+	color: #ffffff;
+	width: 181px;
+}
+#tabmenu li li {
+	
+}
+#tabmenu li li {
+	width: 181px;
+}
+#tabmenu li ul ul {
+	margin: -30px 0 0 173px;
+}
+#tabmenu li li:hover,
+#tabmenu li li.sfHover { color:#ffffff;
+}
+
+#tabmenu li ul {
+	width: 184px;
+	}
+#tabmenu li:hover,
+#tabmenu li.sfHover,
+#tabmenu li.active,
+body.jshack.forum #tabmenu li.forum,
+body.jshack.forum #tabmenu li.forum.sfHover,
+body.jshack.support #tabmenu li.support,
+body.jshack.support #tabmenu li.support.sfHover {	
+	background-image: url(chromebg-over.gif);
+	background-position: left;
+	background-repeat:  no-repeat;
+	color:#000000;
+	
+}
+#tabmenu li:hover a,
+#tabmenu li.sfHover a,
+#tabmenu li.active:hover a,
+#tabmenu li.active.sfHover a,
+#tabmenu li a:hover,
+#tabmenu li.active a,
+#tabmenu li.active a:hover,
+body.jshack.forum #tabmenu li.forum a,
+body.jshack.forum #tabmenu li.forum.sfHover a,
+body.jshack.support #tabmenu li.support a,
+body.jshack.support #tabmenu li.support.sfHover a {
+	background: url(chromebg-overRight.gif) right no-repeat;
+	color: #ffffff;
+}
+
+#tabmenu li:hover ul a,
+#tabmenu li.sfHover ul a,
+#tabmenu li.active:hover ul a {
+	background-image: none;
+}
+
+#tabmenu ul li.active ul li a,
+#tabmenu ul li.active ul li,
+#tabmenu ul li.active ul li a:hover,
+#tabmenu ul li.active ul li.hover,
+#tabmenu ul li.active ul li.sfHover {
+	color: #FFFFFF;
+}
+
+#tabmenu li.sfHover ul li.sfHover {
+	background: #7da11c;
+}
+
+/* @end */
+
+/* @group NAVBAR */
+
+#tabmenu {
+	height: 30px;
+	padding: 3px 10px 0px 0px;
+	margin: 0;
+	position: relative;
+	z-index: 10000;
+	float: none;
+}
+
+#tabmenu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#tabmenu ul li {
+	position: relative;
+	margin-right: 4px;
+}
+#tabmenu ul li.sfHover li {
+	margin-right: 0px;
+}
+
+
+/*PARENT MENU*/
+
+#tabmenu a {
+	float: left;
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+	height: 30px;
+	line-height: 30px;
+	padding: 0px 10px 0px 8px;
+}
+
+/*PARENT MENU ITEM HOVER*/
+
+#tabmenu li a:hover {
+	height: 30px;
+}
+
+/*ALL LISTS*/
+
+#tabmenu li {
+	float: left;
+	padding: 0;
+	background: none;
+	margin: 0px;
+}
+
+#tabmenu ul ul a {
+	background: none;
+}
+
+/*SUBLEVEL TEXT STYLES*/
+
+#tabmenu li li a {
+	font-weight: normal;
+	padding: 0;
+	height: 26px;
+	line-height: 21px;
+	text-indent: 5px;
+}
+
+#tabmenu ul ul a {
+	display: block;
+	text-decoration: none;
+	text-transform: none;
+
+}
+
+#tabmenu li li {
+	padding: 0;
+	background: none;
+	/*DONT SHOW THE BACKGROUND IMAGE*/
+}
+
+/*SUBLEVEL POSITIONING*/
+
+#tabmenu li li {
+	float: left;
+	padding: 0;
+
+}
+
+#tabmenu li:hover,
+#tabmenu li.sfHover {
+	left: 0;
+}
+
+/*SUBLEVEL HOVER STYLES*/
+
+#tabmenu ul ul a:hover {
+	background: none;
+	height: 26px;
+	line-height: 26px;
+	padding: 0;
+	margin: 0;
+
+}
+
+#tabmenu li ul {
+	top: 30px;
+	position: absolute;
+	left: -999em;
+	height: auto;
+	font-weight: normal;
+	border-width: 0;
+	margin: 0;
+	padding: 0;
+	border-bottom: none;
+}
+
+
+/* NO SUBLEVEL ACTIVE STYLES */
+#tabmenu ul li.active ul li a,
+#tabmenu ul li.active ul li,
+#tabmenu ul li.active ul li a:hover,
+#tabmenu ul li.active ul li.hover
+#tabmenu ul li.active ul li.sfHover {
+	background-image: none;
+}
+/*SUBLEVEL PARENT INDICATORS*/
+
+
+
+/* HIDE OTHER LISTS FROM IE */
+
+#tabmenu li:hover ul ul, 
+#tabmenu li:hover ul ul ul,
+#tabmenu li:hover ul ul ul ul,  
+#tabmenu li.sfHover ul ul, 
+#tabmenu li.sfHover ul ul ul, 
+#tabmenu li.sfHover ul ul ul ul {
+	left: -999em;
+}
+
+#tabmenu li:hover ul, 
+#tabmenu li li:hover ul, 
+#tabmenu li li li:hover ul, 
+#tabmenu li li li li:hover ul,
+#tabmenu li.sfHover ul, 
+#tabmenu li li.sfHover ul, 
+#tabmenu li li li.sfHover ul,
+#tabmenu li li li li.sfHover ul {
+	z-index: 100;
+	left: 0;
+
+}
+
+/* @end */
+
+#tabmenu ul li ul.menuBg{background:url(menutopBg.gif) no-repeat;}
+#tabmenu ul li ul.menuBg li a{color:#000000 !important;}
+#tabmenu ul li ul.menuBg li a:hover{color:#ffffff !important;}
+
+#tabmenu ul li ul DIV.menuBottomBg{background:url(menutopBg.gif) bottom left no-repeat; clear:both; padding-top:5px;}

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 9, 2009 11:12:38 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+	<class name="com.ibm.ioes.npd.hibernate.beans.TtrnProjectrisks"
+		table="TTRN_PROJECTRISKS">
+		<id name="projriskid" type="long">
+			<column name="PROJRISKID" />
+			<generator class="identity" />
+		</id>
+		<many-to-one name="ttrnProject"
+			class="com.ibm.ioes.npd.hibernate.beans.TtrnProject" lazy="false">
+			<column name="PROJECTID" not-null="true" />
+		</many-to-one>
+		<property name="description" type="string">
+			<column name="DESCRIPTION" length="500" not-null="true" />
+		</property>
+		<property name="status" type="int">
+			<column name="STATUS" not-null="true" />
+		</property>
+		<property name="risksource" type="string">
+			<column name="RISKSOURCE" length="100" />
+		</property>
+		<property name="priority" type="string">
+			<column name="PRIORITY" length="1" not-null="true" />
+		</property>
+		<property name="level" type="java.lang.Integer">
+			<column name="LEVEL" />
+		</property>
+		<property name="resolutiontime" type="java.lang.Integer">
+			<column name="RESOLUTIONTIME" />
+		</property>
+		<many-to-one name="raisedby"
+			class="com.ibm.ioes.npd.hibernate.beans.TmEmployee" lazy="false">
+			<column name="RAISEDBY" not-null="true" />
+		</many-to-one>
+		<property name="raiseddate" type="timestamp">
+			<column name="RAISEDDATE" length="26" not-null="true" />
+		</property>
+		<many-to-one name="migratedowner"
+			class="com.ibm.ioes.npd.hibernate.beans.TmEmployee" lazy="false">
+			<column name="MIGRATEDOWNER" not-null="true" />
+		</many-to-one>
+		<many-to-one name="riskowner"
+			class="com.ibm.ioes.npd.hibernate.beans.TmEmployee" lazy="false">
+			<column name="RISKOWNER" not-null="true" />
+		</many-to-one>
+
+		<property name="plannedresodate" type="date">
+			<column name="PLANNEDRESODATE" length="10" />
+		</property>
+		<property name="actualresodate" type="date">
+			<column name="ACTUALRESODATE" length="10" />
+		</property>
+		<property name="probability" type="string">
+			<column name="PROBABILITY" length="1" not-null="true" />
+		</property>
+		<property name="impact" type="string">
+			<column name="IMPACT" length="1" not-null="true" />
+		</property>
+		<property name="mitigationplan" type="string">
+			<column name="MITIGATIONPLAN" length="1500" />
+		</property>
+		<property name="riskimpact" type="string">
+			<column name="RISKIMPACT" length="1500" />
+		</property>
+		<property name="isactive" type="int">
+			<column name="ISACTIVE" not-null="true" />
+		</property>
+		<many-to-one name="createdby"
+			class="com.ibm.ioes.npd.hibernate.beans.TmEmployee" lazy="false">
+			<column name="CREATEDBY" not-null="true" />
+		</many-to-one>
+
+		<property name="createddate" type="timestamp">
+			<column name="CREATEDDATE" length="26" not-null="true" />
+		</property>
+
+		<many-to-one name="modifiedby"
+			class="com.ibm.ioes.npd.hibernate.beans.TmEmployee" lazy="false">
+			<column name="MODIFIEDBY"/>
+		</many-to-one>
+
+		<property name="modifieddate" type="timestamp">
+			<column name="MODIFIEDDATE" length="26" />
+		</property>
+	</class>
+</hibernate-mapping>

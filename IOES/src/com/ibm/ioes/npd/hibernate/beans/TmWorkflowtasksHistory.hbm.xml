@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 9, 2009 11:12:38 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+	<class name="com.ibm.ioes.npd.hibernate.beans.TmWorkflowtasksHistory"
+		table="TM_WORKFLOWTASKSHISTORY">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="identity" />
+		</id>
+
+		<property name="taskid" type="long">
+			<column name="TASKID" />
+		</property>
+		<many-to-one name="stagehistoryid"
+			class="com.ibm.ioes.npd.hibernate.beans.TmWorkflowstageHistory"
+			lazy="false">
+			<column name="STAGEHISTORYID" />
+		</many-to-one>
+
+		<property name="stage1" type="int">
+			<column name="STAGEID" />
+		</property>
+
+		<property name="taskname" type="string">
+			<column name="TASKNAME" length="500" />
+		</property>
+		<property name="taskdesc" type="string">
+			<column name="TASKDESC" length="500" />
+		</property>
+		<property name="planneddurationdays" type="java.lang.Integer">
+			<column name="PLANNEDDURATIONDAYS" />
+		</property>
+		<many-to-one name="stakeholder"
+			class="com.ibm.ioes.npd.hibernate.beans.TmRoles" lazy="false">
+			<column name="STAKEHOLDER" not-null="true" />
+		</many-to-one>
+		<property name="tasktype" type="java.lang.Integer">
+			<column name="TASKTYPE" />
+		</property>
+		<property name="istaskdelegable" type="java.lang.Integer">
+			<column name="ISTASKDELEGABLE" />
+		</property>
+		<property name="isfirsttask" type="java.lang.Integer">
+			<column name="ISFIRSTTASK" />
+		</property>
+		<property name="taskinstructionremarks" type="string">
+			<column name="TASKINSTRUCTIONREMARKS" length="1000" />
+		</property>
+		<property name="taskpriority" type="java.lang.Integer">
+			<column name="TASKPRIORITY" />
+		</property>
+		<property name="isattachment" type="java.lang.Integer">
+			<column name="ISATTACHMENT" />
+		</property>
+		<property name="isemailtemplate" type="java.lang.Integer">
+			<column name="ISEMAILTEMPLATE" />
+		</property>
+		<property name="isreminderrequired" type="java.lang.Integer">
+			<column name="ISREMINDERREQUIRED" />
+		</property>
+		<property name="createdby" type="int">
+			<column name="CREATEDBY" not-null="true" />
+		</property>
+		<property name="createddate" type="timestamp">
+			<column name="CREATEDDATE" length="26" not-null="true" />
+		</property>
+		<property name="modifiedby" type="java.lang.Integer">
+			<column name="MODIFIEDBY" />
+		</property>
+		<property name="modifieddate" type="date">
+			<column name="MODIFIEDDATE" length="10" />
+		</property>
+		<property name="isactive" type="int">
+			<column name="ISACTIVE" not-null="true" />
+		</property>
+		<property name="islasttask" type="java.lang.Integer">
+			<column name="ISLASTTASK" />
+		</property>
+		<property name="prevtaskid" type="java.lang.Long">
+			<column name="PREVTASKID" />
+		</property>
+		<property name="referenceDocId" type="java.lang.Long">
+			<column name="REFERENCEDOCID" />
+		</property>
+		<property name="isrejectionallowed" type="java.lang.Integer">
+			<column name="ISREJECTIONALLOWED" />
+		</property>
+	</class>
+</hibernate-mapping>

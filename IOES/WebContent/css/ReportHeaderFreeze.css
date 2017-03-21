@@ -1,0 +1,1161 @@
+table.main
+        {
+            width: 100%;
+            height: 221px;
+            table-layout: fixed;
+        }
+        table.root 
+        {
+            table-layout: fixed;
+        }
+        table.content1
+        {
+            table-layout: fixed;
+            width: 100%;
+        }
+        .table.content1 tr.grayBg{background:#CCCC99; }
+		.table.content1 tr.grayBg td{color:#5788B1 !important;}
+		.table.content1 tr.lightBg{background:#FEFEFE;}
+		.table.content1 tr.lightBg:hover{background:#0000FE; color:#ffffff !important; }
+		.table.content1 tr.normal{background:#F7F7E7;}
+		.table.content1 tr.normal:hover{background:#0000FE; color:#ffffff !important; }
+        table.head1
+        {
+            table-layout: fixed;
+            width: 100%;
+        }
+        table.frozen
+        {
+            table-layout: fixed;
+        }
+        
+        div.horizontal-scroll
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scroll div
+        {
+            width: 13500px;
+            height: 1px;
+        }
+        
+       
+        
+         div.horizontal-scrollService
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollService div
+        {
+            width: 1000px;
+            height: 1px;
+        }
+	div.horizontal-scrollOrderStageReport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollOrderStageReport div
+        {
+            width: 3550px;
+            height: 1px;
+        }
+        div.horizontal-scrollLogicalSIDataReport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollLogicalSIDataReport div
+        {
+            width: 22500px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrollM6CancelledReport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollM6CancelledReport div
+        {
+            width: 2250px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrollMigAppNewOrderReport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollMigAppNewOrderReport div
+        {
+            width: 13580px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrollLEPMOwnerReport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollLEPMOwnerReport div
+        {
+            width: 1500px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrollOrderClepReport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollOrderClepReport div
+        {
+            width: 720px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrollOrderChangeReport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollOrderChangeReport div
+        {
+            width: 8200px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrollNonAppChangeOrderDetailsReport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollNonAppChangeOrderDetailsReport div
+        {
+            width: 13410px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrollNonMigAppUnappNewOrderDetailsReport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollNonMigAppUnappNewOrderDetailsReport div
+        {
+            width: 13250px;
+            height: 1px;
+        }
+        div.horizontal-scrollnonappchangeorderdetailsreportusage
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollnonappchangeorderdetailsreportusage div
+        {
+            width: 6700px;
+            height: 1px;
+        }
+        div.horizontal-scrollOrderDetailReport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #766;
+        }
+        div.horizontal-scrollOrderDetailReport div
+        {
+            width: 14850px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrollOrderNewReport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollOrderNewReport div
+        {
+            width: 11000px;
+            height: 1px;
+        }
+        
+	div.horizontal-scrolllepmcancelreport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrolllepmcancelreport div
+        {
+            width: 8750px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrolllepmdetailreport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrolllepmdetailreport div
+        {
+            width: 8940px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrollbulkupload
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollbulkupload div
+        {
+            width: 4430px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrolldisconnectionline
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrolldisconnectionline div
+        {
+            width: 8760px;
+            height: 1px;
+        }
+        
+      	div.horizontal-scrollactivelinereport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollactivelinereport div
+        {
+            width: 20500px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrollcancelfailreport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollcancelfailreport div
+        {
+            width: 6140px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrollcancelHardwareLinereport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollcancelHardwareLinereport div
+        {
+            width: 1590px;
+            height: 1px;
+        }
+        
+         div.horizontal-scrolldisconnectionchange
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+         div.horizontal-scrolldisconnectionchange div
+        {
+            width: 	23200px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrollbillingtriggerdonefailedfx
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollbillingtriggerdonefailedfx div
+        {
+            width: 14200px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrollattributereport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollattributereport div
+        {
+            width: 0px;
+            height: 1px;
+        }
+        
+
+		div.horizontal-scrolltelemediaorderreport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrolltelemediaorderreport div
+        {
+            width: 0px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrollzerovalueorder
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollzerovalueorder div
+        {
+            width: 5130px;
+            height: 1px;
+        }
+         
+         div.horizontal-scrollraterenewal
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollraterenewal div
+        {
+            width: 10000px;
+            height: 1px;
+        }
+        
+         div.horizontal-scrollpendingservicerport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollpendingservicerport div
+        {
+            width: 4200px;
+            height: 1px;
+        }
+        
+         div.horizontal-scrollperformancedetailreport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollperformancedetailreport div
+        {
+            width: 5250px;
+            height: 1px;
+        }
+        
+         div.horizontal-scrollperformancereport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollperformancereport div
+        {
+            width: 4400px;
+            height: 1px;
+        }
+         
+         div.horizontal-scrollperformancesummary
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollperformancesummary div
+        {
+            width: 4700px;
+            height: 1px;
+        }
+         
+         div.horizontal-scrollpendinglinereport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollpendinglinereport div
+        {
+            width: 16500px;
+            height: 1px;
+        }
+        
+         div.horizontal-scrollstartchargenotpushedinfx
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollstartchargenotpushedinfx div
+        {
+            width: 14060px;
+            height: 1px;
+        }
+                	
+        
+         div.horizontal-scrollpendinorderandbilling
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollpendinorderandbilling div
+        {
+            width: 5500px;
+            height: 1px;
+        }
+        
+         div.horizontal-scrollorderclepreport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollorderclepreport div
+        {
+            width: 800px;
+            height: 1px;
+        }
+        
+           div.horizontal-scrollcancelcopyreport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollcancelcopyreport div
+        {
+            width: 800px;
+            height: 1px;
+        }
+        
+           div.horizontal-scrollorderstagereport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollorderstagereport div
+        {
+            width: 6200px;
+            height: 1px;
+        }
+        
+          div.horizontal-scrollpendingorderandbillinghw
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollpendingorderandbillinghw div
+        {
+            width: 2900px;
+            height: 1px;
+        }
+        
+          div.horizontal-scrollorderdetailreport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollorderdetailreport div
+        {
+            width: 7300px;
+            height: 1px;
+        }
+        
+          div.horizontal-scrollbillingworkqueuereport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollbillingworkqueuereport div
+        {
+            width: 9100px;
+            height: 1px;
+        }
+          div.horizontal-scrollorderreportnewusage
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollorderreportnewusage div
+        {
+            width: 9500px;
+            height: 1px;
+        }
+          div.horizontal-scrollactivelineitemreportusage
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollactivelineitemreportusage div
+        {
+            width: 13000px;
+            height: 1px;
+        }
+          div.horizontal-scrollbilltriggerdonebutfailinfxusage
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollbilltriggerdonebutfailinfxusage div
+        {
+            width: 9800px;
+            height: 1px;
+        }
+        
+          div.horizontal-scrollcancelfaillinereportusage
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollcancelfaillinereportusage div
+        {
+            width: 6300px;
+            height: 1px;
+        }
+          div.horizontal-scrollcustomerbasereport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollcustomerbasereport div
+        {
+            width: 4580px;
+            height: 1px;
+        }
+        
+          div.horizontal-scrolldisconnectlinereportusage
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrolldisconnectlinereportusage div
+        {
+            width: 8050px;
+            height: 1px;
+        }
+          div.horizontal-scrolldisconnectchangeorderreportusage
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrolldisconnectchangeorderreportusage div
+        {
+            width: 19150px;
+            height: 1px;
+        }
+           div.horizontal-scrolllogicalsidatereportusage
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrolllogicalsidatereportusage div
+        {
+            width: 6920px;
+            height: 1px;
+        }
+        
+           div.horizontal-scrollnonmigappunapporderreportusage
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollnonmigappunapporderreportusage div
+        {
+            width: 7550px;
+            height: 1px;
+        }
+          div.horizontal-scrollpendingorderbillingreportusage
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollpendingorderbillingreportusage div
+        {
+            width: 4000px;
+            height: 1px;
+        }
+          div.horizontal-scrollraterenewalreportusage
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollraterenewalreportusage div
+        {
+            width: 7950px;
+            height: 1px;
+        }
+          div.horizontal-scrollrestpendinglinereportusage
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollrestpendinglinereportusage div
+        {
+            width: 9700px;
+            height: 1px;
+        }
+          div.horizontal-scrollstartchargenotpushedinfxreportusage
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollstartchargenotpushedinfxreportusage div
+        {
+            width: 10000px;
+            height: 1px;
+        }
+          div.horizontal-scrollmigappneworderreportusage
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollmigappneworderreportusage div
+        {
+            width: 7410px;
+            height: 1px;
+        }
+        div.vertical-scroll
+        {
+            height: 227px;
+            width: 100%;
+            overflow: hidden;
+            overflow-y: scroll;
+            border: solid 1px #666;
+        }
+        
+        div.vertical-scroll div
+        {
+            height:2500px;
+            width: 1px;
+        }
+        
+          div.vertical-scrollService
+        {
+            height: 290px;
+            width: 100%;
+            overflow: hidden;
+            overflow-y: scroll;
+            border: solid 1px #666;
+        }
+        
+        div.vertical-scrollService div
+        {
+            height:1700px;
+            width: 1px;
+        }
+        
+        
+        td.inner
+        {
+            border-left: 1px solid #666;
+            border-bottom: 1px solid #666;
+            padding: 0px;
+            height: 30px;
+        }
+        td.innerHead
+        {
+            border-left: 1px solid #666;
+            border-bottom: 1px solid #666;
+            padding: 0px;
+            height: 90px;
+        }
+        
+        td.frozencol
+        {
+            border-right: 1px double #666;
+            width: 1px;
+        }
+        td.col1
+        {           
+            width: 50px;
+        }
+        .col2
+        {            
+            width:100px;
+        }
+        .col4
+        {            
+            width:150px;
+        }
+        .col3
+        {            
+            width:200px;
+        }
+        .col5
+        {            
+            width:250px;
+        }
+        .col6
+        {            
+            width:300px;
+        }
+        .col11
+        {            
+            width:75px;
+        }
+        .col12
+        {            
+            width:125px;
+        }
+        .col13
+        {            
+            width:175px;
+        }
+	
+		.col31
+        {            
+            width:130px;
+        }
+        .col51
+        {            
+            width:180px;
+        }
+        
+        .col21
+        {            
+            width:80px;
+        }
+	
+        td.bottomcol
+        {
+            /*border-bottom: 1px solid #666;*/
+        }
+        .col2, .col6, .col7, .col8, .col9, .col10
+        {
+            width: 100px;
+            overflow: hidden;
+            text-overflow: ellipses;
+            white-space: nowrap;
+        }
+        td.head1
+        {
+            /*border-bottom: 1px solid #666;*/
+            background-color: #CCCC99;
+            border-top: 1px solid #666;
+        }
+        .rightcol
+        {
+            border-right: 1px solid #666;
+        }
+        .toprow
+        {
+            border-top: 1px;
+        }
+        div.root
+        {
+            margin-left: 0px;
+            overflow: hidden;
+            width: 100%;
+            height: 26px;
+            border-bottom: 1px solid #666;
+        }
+        div.frozen
+        {
+            overflow: hidden;
+            width: 100%; /*border-bottom: 1px solid #666;*/
+            height: 200px;
+        }
+        div.divhead
+        {
+            overflow: hidden;            
+            width: 100%;
+            border-left: 1px solid #666;
+            border-right: 1px solid #666; /*border-bottom: 0px solid #666;*/
+            border-bottom: 1px solid #666;
+        }
+        
+        div.content1
+        {
+            overflow: hidden;
+            width: 100%;
+            height: 200px;
+            border-left: 1px solid #666;
+            border-right: 1px solid #666; /*border-bottom: 1px solid #666;*/
+        }
+        td.tablefrozencolumn
+        {
+            width: 1px;
+            border-right: 3px solid #666;
+        }
+        td.tablecontent
+        {
+            width: 100%;
+        }
+        td.tableverticalscroll
+        {
+            width: 24px;
+        }
+        div.ff-fill
+        {
+            height: 23px;
+            width: 23px;
+            background-color: #ccc;
+            border-right: 1px solid #666;
+            border-bottom: 1px solid #666;
+        }
+        div.horizontal-scrollAdvancePaymentReport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollAdvancePaymentReport div
+        {
+            width: 6400px; /* change by Varun for PDArchivalOrder */
+            height: 1px;
+        }
+        
+        
+          div.horizontal-scrollOrderListForPendingWithAM
+        {
+            width: 100%;
+            height: 24px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollOrderListForPendingWithAM div
+        {
+            width: auto; /* change by ravi*/
+            height: 1px;
+        }
+         
+     div.horizontal-scrolldemoreport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrolldemoreport div
+        {
+            width: 6550px;
+            height: 1px;
+        }
+        
+        div.horizontal-scrollOBVAlueReport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollOBVAlueReport div
+        {
+            width: 12350px;
+            height: 1px;
+        }
+
+         div.horizontal-scrolldummyLineReport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrolldummyLineReport div
+        {
+            width: 5000px;
+            height: 1px;
+        }
+
+		div.horizontal-scrollOBValueReport_Usage
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollOBValueReport_Usage div
+        {
+            width: 10500px;
+            height: 1px;
+        }
+        /* Lsi cancellation table freeze css*/
+        table.lsicancellationmain
+        {
+            width: 100%;
+            height: 350px;
+            table-layout: fixed;
+        }
+        table.lsicancellationroot 
+        {
+            table-layout: fixed;      
+            height: 350px;
+        }
+        table.lsicancellationfrozen
+        {
+            table-layout: fixed;
+            height: 350px;
+        }
+        td.lsicancellationfrozencol
+        {
+        	height:350px;
+            border-right: 1px double #666;
+            width: 1px;
+        }
+        div.lsicancellationfrozen
+        {
+            overflow: hidden;
+            width: 100%; /*border-bottom: 1px solid #666;*/
+            height: 300px;
+        }
+        div.lsicancelcontent1
+        {
+            overflow: hidden;
+            width: 100%;
+            height: 300px;
+            border-left: 1px solid #666;
+            border-right: 1px solid #666; /*border-bottom: 1px solid #666;*/
+        }
+        td.lsicanceltablefrozencolumn
+        {
+        	height: 350px;
+            width: 1px;
+            border-right: 3px solid #666;
+        }
+        td.lsicanceltablecontent
+        {
+            width: 100%;
+            height: 350px;
+        }
+        div.vertical-scrolllsicancellation
+        {
+            height: 350px; 
+            width: 100%;
+            overflow: hidden;
+            overflow-y: scroll;
+            border: solid 1px #666;
+        }
+        
+        div.vertical-scrolllsicancellation div
+        {
+            height:1650px; 
+            width: 1px;
+        }
+        div.horizontal-scrolllsicancellation
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrolllsicancellation div
+        {
+            width: 2700px;
+            height: 1px;
+        }
+        /* Lsi cancellation table freeze css*/
+        /*document matrix report starts*/
+        div.horizontal-scrolldocumentmatrix
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+         div.horizontal-scrolldocumentmatrix div
+        {
+            width: 	4000px;
+            height: 1px;
+        }
+        /*document matrix report ends*/
+        
+       
+        /* Varun Starts */
+       
+          div.horizontal-scrollArchivalReports
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollArchivalReports div
+        {
+            width: 38400px; /* change by Varun*/
+            height: 1px;
+        }
+        /*priya */
+        div.horizontal-scrollServiceLevelRemarksReport
+        {
+            width: 100%;
+            height: 22px;
+            overflow: hidden;
+            overflow-x: scroll;
+            border: solid 1px #666;
+        }
+        div.horizontal-scrollServiceLevelRemarksReport div
+        {
+            width: 20500px;
+            height: 1px;
+        }
+     /* Varun End */

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 9, 2009 11:12:38 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+    <class name="com.ibm.ioes.npd.hibernate.beans.TmAppconfig" table="TM_APPCONFIG">
+        <id name="appconfigid" type="int">
+            <column name="APPCONFIGID" />
+            <generator class="assigned" />
+        </id>
+        <property name="keyname" type="string">
+            <column name="KEYNAME" length="100" not-null="true" />
+        </property>
+        <property name="keyvalue" type="string">
+            <column name="KEYVALUE" length="500" not-null="true" />
+        </property>
+        <property name="cretaedby" type="long">
+            <column name="CRETAEDBY" not-null="true" />
+        </property>
+        <property name="createddate" type="timestamp">
+            <column name="CREATEDDATE" length="26" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

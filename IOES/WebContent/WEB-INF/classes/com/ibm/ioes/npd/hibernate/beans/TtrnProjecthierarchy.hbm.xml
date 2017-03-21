@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2010 10:30:25 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+    <class name="com.ibm.ioes.npd.hibernate.beans.TtrnProjecthierarchy" table="TTRN_PROJECTHIERARCHY">
+        <id name="projecthierarchyid" type="long">
+            <column name="PROJECTHIERARCHYID" />
+            <generator class="identity" />
+        </id>
+        <property name="projectworkflowid" type="long">
+            <column name="PROJECTWORKFLOWID" not-null="true" />
+        </property>
+        <property name="workflowid" type="java.lang.Long">
+            <column name="WORKFLOWID" />
+        </property>
+        <property name="currentstageid" type="java.lang.Long">
+            <column name="CURRENTSTAGEID" />
+        </property>
+        <property name="currenttaskid" type="java.lang.Long">
+            <column name="CURRENTTASKID" />
+        </property>
+        <property name="prevstageid" type="java.lang.Long">
+            <column name="PREVSTAGEID" />
+        </property>
+        <property name="prevtaskid" type="java.lang.Long">
+            <column name="PREVTASKID" />
+        </property>
+        <property name="isfirsttask" type="java.lang.Integer">
+            <column name="ISFIRSTTASK" />
+        </property>
+        <property name="islasttask" type="java.lang.Integer">
+            <column name="ISLASTTASK" />
+        </property>
+        <property name="stagestartdate" type="date">
+            <column name="STAGESTARTDATE" length="10" />
+        </property>
+        <property name="stageenddate" type="date">
+            <column name="STAGEENDDATE" length="10" />
+        </property>
+        <property name="taskstartdate" type="date">
+            <column name="TASKSTARTDATE" length="10" />
+        </property>
+        <property name="taskenddate" type="date">
+            <column name="TASKENDDATE" length="10" />
+        </property>
+        <property name="actualstagestartdate" type="date">
+            <column name="ACTUALSTAGESTARTDATE" length="10" />
+        </property>
+        <property name="actualtaskenddate" type="date">
+            <column name="ACTUALTASKENDDATE" length="10" />
+        </property>
+        <property name="actualtaskstartdate" type="date">
+            <column name="ACTUALTASKSTARTDATE" length="10" />
+        </property>
+        <property name="actualstageenddate" type="date">
+            <column name="ACTUALSTAGEENDDATE" length="10" />
+        </property>
+        <property name="taskduration" type="java.lang.Long">
+            <column name="TASKDURATION" />
+        </property>
+        <property name="stageduration" type="java.lang.Long">
+            <column name="STAGEDURATION" />
+        </property>
+        <property name="hierarchyversion" type="java.lang.Long">
+            <column name="HIERARCHYVERSION" />
+        </property>
+        <property name="taskstatus" type="java.lang.Long">
+            <column name="TASKSTATUS" />
+        </property>
+        <property name="taskstakeholder" type="java.lang.Long">
+            <column name="TASKSTAKEHOLDER" />
+        </property>
+        <property name="taskdelegatedstakeholder" type="java.lang.Long">
+            <column name="TASKDELEGATEDSTAKEHOLDER" />
+        </property>
+        <property name="currenttaskstakeholdrole" type="java.lang.Long">
+            <column name="CURRENTTASKSTAKEHOLDROLE" />
+        </property>
+        <property name="taskdelegatedrole" type="java.lang.Long">
+            <column name="TASKDELEGATEDROLE" />
+        </property>
+        <property name="nexttaskholderrole" type="java.lang.Long">
+            <column name="NEXTTASKHOLDERROLE" />
+        </property>
+        <property name="taskname" type="string">
+            <column name="TASKNAME" length="500" />
+        </property>
+        <property name="taskdesc" type="string">
+            <column name="TASKDESC" length="500" />
+        </property>
+        <property name="taskPlanneddurationdays" type="java.lang.Integer">
+            <column name="TASK_PLANNEDDURATIONDAYS" />
+        </property>
+        <property name="taskTaskinstructionremarks" type="string">
+            <column name="TASK_TASKINSTRUCTIONREMARKS" length="1000" />
+        </property>
+        <property name="taskIsattachment" type="java.lang.Integer">
+            <column name="TASK_ISATTACHMENT" />
+        </property>
+        <property name="taskCreatedby" type="java.lang.Integer">
+            <column name="TASK_CREATEDBY" />
+        </property>
+        <property name="taskCreateddate" type="timestamp">
+            <column name="TASK_CREATEDDATE" length="26" />
+        </property>
+        <property name="taskModifiedby" type="java.lang.Integer">
+            <column name="TASK_MODIFIEDBY" />
+        </property>
+        <property name="taskModifieddate" type="date">
+            <column name="TASK_MODIFIEDDATE" length="10" />
+        </property>
+        <property name="taskReferencedocid" type="java.lang.Integer">
+            <column name="TASK_REFERENCEDOCID" />
+        </property>
+        <property name="taskTaskpriority" type="java.lang.Integer">
+            <column name="TASK_TASKPRIORITY" />
+        </property>
+        <property name="taskIsemailtemplate" type="java.lang.Integer">
+            <column name="TASK_ISEMAILTEMPLATE" />
+        </property>
+        <property name="taskIsreminderrequired" type="java.lang.Integer">
+            <column name="TASK_ISREMINDERREQUIRED" />
+        </property>
+        <property name="taskTasktype" type="java.lang.Integer">
+            <column name="TASK_TASKTYPE" />
+        </property>
+        <property name="rejectionAllowed" type="java.lang.Integer">
+            <column name="TASK_REJECTIONALLOWED" />
+        </property>
+        
+        <property name="taskIstaskdelegable" type="java.lang.Integer">
+            <column name="TASK_ISTASKDELEGABLE" />
+        </property>
+        <property name="stagename" type="string">
+            <column name="STAGENAME" length="50" />
+        </property>
+        <property name="stagedesc" type="string">
+            <column name="STAGEDESC" length="100" />
+        </property>
+        <property name="stageCreatedby" type="java.lang.Integer">
+            <column name="STAGE_CREATEDBY" />
+        </property>
+        <property name="stageCreateddate" type="timestamp">
+            <column name="STAGE_CREATEDDATE" length="26" />
+        </property>
+        <property name="stageModifiedby" type="java.lang.Integer">
+            <column name="STAGE_MODIFIEDBY" />
+        </property>
+        <property name="stageModifieddate" type="date">
+            <column name="STAGE_MODIFIEDDATE" length="10" />
+        </property>
+        <property name="assignedtouserid" type="java.lang.Long">
+            <column name="ASSIGNEDTOUSERID" />
+        </property>
+        <property name="createdby" type="java.lang.Long">
+            <column name="CREATEDBY" />
+        </property>
+        <property name="createddate" type="timestamp">
+            <column name="CREATEDDATE" length="26" />
+        </property>
+        <property name="isactive" type="java.lang.Integer">
+            <column name="ISACTIVE" />
+        </property>
+    </class>
+</hibernate-mapping>

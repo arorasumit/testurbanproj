@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 9, 2009 11:12:38 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+	<class name="com.ibm.ioes.npd.hibernate.beans.TtrnMeetingschedules"
+		table="TTRN_MEETINGSCHEDULES">
+		<id name="meetingid" type="long">
+			<column name="MEETINGID" />
+			<generator class="identity" />
+		</id>
+		<many-to-one name="tmMeetings"
+			class="com.ibm.ioes.npd.hibernate.beans.TmMeetings" fetch="select" lazy="false">
+			<column name="MEETINGTYPEID" not-null="true" />
+		</many-to-one>
+		<property name="subject" type="string">
+			<column name="SUBJECT" length="100" not-null="true" />
+		</property>
+		<property name="meetingdate" type="date">
+			<column name="MEETINGDATE" length="10" not-null="true" />
+		</property>
+		<property name="starttime" type="time">
+			<column name="STARTTIME" length="8" not-null="true" />
+		</property>
+		<property name="endtime" type="time">
+			<column name="ENDTIME" length="8" not-null="true" />
+		</property>
+		<property name="attachment" type="blob">
+			<column name="ATTACHMENT" />
+		</property>
+		<property name="attachment1" type="blob">
+			<column name="ATTACHMENT1" />
+		</property>
+		<property name="attachment2" type="blob">
+			<column name="ATTACHMENT2" />
+		</property>
+		<property name="isactive" type="int">
+			<column name="ISACTIVE" not-null="true" />
+		</property>
+		<property name="cretaedby" type="long">
+			<column name="CRETAEDBY" not-null="true" />
+		</property>
+		<property name="cretaeddate" type="timestamp">
+			<column name="CRETAEDDATE" length="26" not-null="true" />
+		</property>
+		<property name="modifiedby" type="java.lang.Long">
+			<column name="MODIFIEDBY" />
+		</property>
+		<property name="modifieddate" type="timestamp">
+			<column name="MODIFIEDDATE" length="26" />
+		</property>
+		<property name="filename" type="string">
+			<column name="FILENAME"/>
+		</property>
+		<property name="filename1" type="string">
+			<column name="FILENAME1" />
+		</property>
+		<property name="filename2" type="string">
+			<column name="FILENAME2" />
+		</property>
+
+		<property name="locationid" type="java.lang.Long">
+			<column name="LOCATIONID" />
+		</property>
+
+		<many-to-one name="ttrnProduct"
+			class="com.ibm.ioes.npd.hibernate.beans.TtrnProject" fetch="select" lazy="false">
+			<column name="PRODUCTID" not-null="true" />
+		</many-to-one>
+	</class>
+</hibernate-mapping>

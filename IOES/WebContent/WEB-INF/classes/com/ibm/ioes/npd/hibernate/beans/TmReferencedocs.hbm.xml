@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 9, 2009 11:12:38 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+	<class name="com.ibm.ioes.npd.hibernate.beans.TmReferencedocs"
+		table="TM_REFERENCEDOCS">
+		<id name="refdocid" type="long">
+			<column name="REFDOCID" />
+			<generator class="identity" />
+		</id>
+		<property name="refdocname" type="string">
+			<column name="REFDOCNAME" length="100" not-null="true" />
+		</property>
+		<property name="refdoc" type="blob">
+			<column name="REFDOC" />
+		</property>
+		<property name="isactive" type="int">
+			<column name="ISACTIVE" not-null="true" />
+		</property>
+		<many-to-one name="createdby"
+			class="com.ibm.ioes.npd.hibernate.beans.TmEmployee" lazy="false"  not-found = "ignore">
+			<column name="CREATEDBY" />
+		</many-to-one>
+		<property name="createddate" type="timestamp">
+			<column name="CREATEDDATE" length="26" not-null="true" />
+		</property>
+		<property name="modifiedby" type="java.lang.Long">
+			<column name="MODIFIEDBY" />
+		</property>
+		<property name="modifieddate" type="timestamp">
+			<column name="MODIFIEDDATE" length="26" />
+		</property>
+		<property name="prev_doc_id" type="java.lang.Long">
+			<column name="PREV_DOC_ID" />
+		</property>
+		<property name="actualRefDocName" type="string">
+			<column name="ACTUALDOCNAME" />
+		</property>
+	</class>
+</hibernate-mapping>

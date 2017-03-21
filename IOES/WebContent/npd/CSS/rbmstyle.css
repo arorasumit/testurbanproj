@@ -1,0 +1,111 @@
+.newtoplink {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #b40404; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.newtoplink:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #b40404; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.graytdbg {
+	BACKGROUND-IMAGE: url(../image/centerbg.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #f6f6f6
+}
+.contentsimple {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.contentbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.topmaintd {
+	BACKGROUND-IMAGE: url(../image/bg-top.gif)
+}
+.contentboldlink {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.toplink {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.botombg {
+	BACKGROUND-IMAGE: url(../image/bottombg.gif); BACKGROUND-REPEAT: repeat-x; HEIGHT: 45px
+}
+.bottomborder {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; BORDER-BOTTOM: #000000 1px dashed; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif
+}
+.rdm-content {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 17px; FONT-FAMILY: Trebuchet MS, Tahoma, Arial, Helvetica, sans-serif
+}
+.graytdbg {
+	BACKGROUND-IMAGE: url(../image/centerbg.gif); BACKGROUND-REPEAT: repeat-x
+}
+.applink {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+TABLE#app-frame {
+	WIDTH: 1004px; TEXT-ALIGN: center
+}
+.myofficeplaceholderbackground {
+	MARGIN: 0px; BACKGROUND-COLOR: #ebebeb
+}
+TABLE#mywork-info-table {
+	WIDTH: 100%; BACKGROUND-COLOR: white
+}
+TABLE#mywork-info-table .info-heading {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; MARGIN-BOTTOM: 0px; COLOR: #5fa8b7; PADDING-TOP: 3px; FONT-FAMILY: Arial,Helvetica,Geneva,sans-serif
+}
+TABLE#mywork-info-table .info-content-left {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; MARGIN-BOTTOM: 0px; COLOR: black; FONT-FAMILY: Arial,Helvetica,Geneva,sans-serif; TEXT-ALIGN: left
+}
+TABLE#mywork-info-table .info-content-right {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; MARGIN-BOTTOM: 0px; COLOR: black; FONT-FAMILY: Arial,Helvetica,Geneva,sans-serif; TEXT-ALIGN: right
+}
+TABLE#mywork-info-table .info-content-center {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; MARGIN-BOTTOM: 0px; COLOR: black; FONT-FAMILY: Arial,Helvetica,Geneva,sans-serif; TEXT-ALIGN: center
+}
+TABLE#mywork-info-table .info-content-justify {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; MARGIN-BOTTOM: 0px; COLOR: black; FONT-FAMILY: Arial,Helvetica,Geneva,sans-serif; TEXT-ALIGN: justify
+}
+.tip-heading {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ff0000; FONT-FAMILY: Tahoma,Arial, Helvetica, sans-serif; HEIGHT: 15px; TEXT-ALIGN: left
+}
+.tip-content {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Tahoma,Arial, Helvetica, sans-serif; HEIGHT: 15px; TEXT-ALIGN: left
+}
+.underlink {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #db0101; FONT-FAMILY: Trebuchet MS, Tahoma,Arial, Helvetica, sans-serif; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.underlink:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #db0101; FONT-FAMILY: Trebuchet MS, Tahoma,Arial, Helvetica, sans-serif; TEXT-ALIGN: left; TEXT-DECORATION: underline
+}
+.whitebg_center {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; FONT-WEIGHT: normal; PADDING-BOTTOM: 6px; VERTICAL-ALIGN: middle; COLOR: #000000; PADDING-TOP: 6px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center; WORD-WRAP: break-word
+}
+.whitebg {
+	PADDING-LEFT: 6px; FONT-WEIGHT: normal; VERTICAL-ALIGN: top; COLOR: #000000; PADDING-TOP: 5px; HEIGHT: 22px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: left; WORD-WRAP: break-word
+}
+.subheader {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 11px; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: middle; PADDING-TOP: 4px; FONT-FAMILY: Tahoma,Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+TABLE#formtable {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; WIDTH: 70%; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #696969
+}
+TABLE#formtable .fieldtd-readonly {
+	PADDING-LEFT: 5px; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 20px; BACKGROUND-COLOR: #f7f7e7; TEXT-ALIGN: left
+}
+TABLE#formtable .fieldtd-lable {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 20px; BACKGROUND-COLOR: #f7f7e7; TEXT-ALIGN: right
+}
+TABLE#formtable .fieldtd-lable-left {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 20px; BACKGROUND-COLOR: #f7f7e7; TEXT-ALIGN: left
+}
+.iconcell {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: top; PADDING-TOP: 4px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+TABLE#message {
+	BORDER-RIGHT: #9d9d9d 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #9d9d9d 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN-LEFT: auto; BORDER-LEFT: #9d9d9d 1px solid; WIDTH: 70%; MARGIN-RIGHT: auto; PADDING-TOP: 3px; BORDER-BOTTOM: #9d9d9d 1px solid; BACKGROUND-COLOR: #ffffdb; TEXT-ALIGN: left
+}
+TABLE#message TD {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; COLOR: #2d2d2d; PADDING-TOP: 2px; FONT-STYLE: normal; FONT-FAMILY: tahoma, arial, verdana; HEIGHT: 25px; BACKGROUND-COLOR: #ffffdb; TEXT-ALIGN: left; FONT-VARIANT: normal
+}
+TABLE#message .icon {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: top; PADDING-TOP: 2px; HEIGHT: 25px; BACKGROUND-COLOR: #ffffdb; TEXT-ALIGN: center
+}
+TABLE#message .center {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: normal; FONT-SIZE: 11px; PADDING-BOTTOM: 2px; COLOR: #2d2d2d; PADDING-TOP: 2px; FONT-STYLE: normal; FONT-FAMILY: tahoma, arial, verdana; HEIGHT: 25px; BACKGROUND-COLOR: #ffffdb; TEXT-ALIGN: center; FONT-VARIANT: normal
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 9, 2009 11:12:38 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+	<class name="com.ibm.ioes.npd.hibernate.beans.TmEmployee"
+		table="TM_EMPLOYEE">
+		<id name="npdempid" type="long">
+			<column name="NPDEMPID" />
+			<generator class="identity" />
+		</id>
+		<property name="empid" type="long">
+			<column name="EMPID"  />
+		</property>
+		<property name="empname" type="string">
+			<column name="EMPNAME" length="50" not-null="true" />
+		</property>
+		<property name="empsource" type="int">
+			<column name="EMPSOURCE" not-null="true" />
+		</property>
+		<property name="createdby" type="long">
+			<column name="CREATEDBY" not-null="true" />
+		</property>
+		<property name="createddate" type="timestamp">
+			<column name="CREATEDDATE" length="26" not-null="true" />
+		</property>
+		<property name="modifiedby" type="java.lang.Long">
+			<column name="MODIFIEDBY" />
+		</property>
+		<property name="modifieddate" type="timestamp">
+			<column name="MODIFIEDDATE" length="26" />
+		</property>
+		<property name="isactive" type="int">
+			<column name="ISACTIVE" not-null="true" />
+		</property>
+
+		<many-to-one name="level1"
+			class="com.ibm.ioes.npd.hibernate.beans.TmRoles" lazy="false" cascade="refresh">
+			<column name="LEVEL1"  />
+		</many-to-one>
+
+		<many-to-one name="level2"
+			class="com.ibm.ioes.npd.hibernate.beans.TmRoles" lazy="false" cascade="refresh">
+			<column name="LEVEL2" />
+		</many-to-one>
+		
+		<property name="level1employeeid" type="java.lang.Long">
+			<column name="LEVEL1_NPD_EMP_ID"  />
+		</property>
+		
+		<property name="level2employeeid" type="java.lang.Long">
+			<column name="LEVEL2_NPD_EMP_ID"  />
+		</property>
+		
+		<property name="email" type="string">
+			<column name="EMAIL" length="100" />
+		</property>
+		<property name="mobileNo" type="string">
+			<column name="MOBILE_NO" length="25" />
+		</property>
+		<property name="ssfid" type="string">
+			<column name="SSFID" length="15" />
+		</property>
+
+	</class>
+</hibernate-mapping>

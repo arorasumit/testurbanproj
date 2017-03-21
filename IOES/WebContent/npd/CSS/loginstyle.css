@@ -1,0 +1,201 @@
+#divMayus {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 11px; VISIBILITY: hidden; PADDING-BOTTOM: 3px; WIDTH: 110px; COLOR: #ffffff; PADDING-TOP: 3px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TOP: 0px
+}
+.mainlogin {
+	BACKGROUND-POSITION: left top; BACKGROUND-REPEAT: repeat-y; background-image:url(../Images/login.png)
+}
+.myStyle {
+	BORDER-RIGHT: #4181a9 1px solid; BORDER-TOP: #4181a9 1px solid; MARGIN-TOP: 25px; VISIBILITY: hidden; MARGIN-LEFT: -100px; BORDER-LEFT: #4181a9 1px solid; WIDTH: 285px; BORDER-BOTTOM: #4181a9 1px solid; POSITION: absolute
+}
+.toolcontent {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif
+}
+.login {
+	BACKGROUND-POSITION: left top; BACKGROUND-ATTACHMENT: scroll; BACKGROUND-image:url(../Images/bg.png); BACKGROUND-REPEAT: repeat-y
+}
+.login_bg {
+	BACKGROUND: url(../Images/bg.png) repeat-y left top; WIDTH: 1004px; HEIGHT: 610px
+}
+#toptablelogged {
+	MARGIN-TOP: 120px; FONT-WEIGHT: bold; FONT-SIZE: 21px; WIDTH: 100%; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif
+}
+#toptablelogged .welcome {
+	PADDING-LEFT: 5px; FONT-WEIGHT: 600; FONT-SIZE: 21px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: bottom; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif
+}
+#toptablelogged .bottomtext {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; VERTICAL-ALIGN: bottom; COLOR: #ffffff; LINE-HEIGHT: 14px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#toptablelogged .birthday {
+	FONT-WEIGHT: bold; FONT-SIZE: 21px; COLOR: #088fa4; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#toptable {
+	MARGIN-TOP: 50px; FONT-WEIGHT: bold; FONT-SIZE: 21px; WIDTH: 100%; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif
+}
+#toptable .welcome {
+	PADDING-LEFT: 5px; FONT-WEIGHT: 600; FONT-SIZE: 21px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: bottom; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif
+}
+#toptable .bottomtext {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; VERTICAL-ALIGN: bottom; COLOR: #ffffff; LINE-HEIGHT: 14px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#toptablebottom {
+	FONT-WEIGHT: bold; FONT-SIZE: 21px; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif
+}
+#toptablebottom .welcome {
+	PADDING-LEFT: 5px; FONT-WEIGHT: 600; FONT-SIZE: 21px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: bottom; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif
+}
+#toptablebottom .bottomtext {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; VERTICAL-ALIGN: bottom; COLOR: #ffffff; LINE-HEIGHT: 14px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#login_screen {
+	PADDING-LEFT: 20px; BACKGROUND: url(../Images/loginscreen5.png) no-repeat left top; WIDTH: 387px; HEIGHT: 238px
+}
+#logged_screen {
+	PADDING-LEFT: 20px; BACKGROUND: url(../Images/logged.png) no-repeat left top; WIDTH: 384px; HEIGHT: 233px
+}
+#login_main_table {
+	MARGIN-TOP: 50px; WIDTH: 640px; HEIGHT: 336px
+}
+#login_main_table1 {
+	WIDTH: 640px; HEIGHT: 336px
+}
+.logininput {
+	BORDER-RIGHT: #ffdada 0px solid; BORDER-TOP: #ffdada 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #ffdada 0px solid; WIDTH: 252px; BORDER-BOTTOM: #ffdada 1px solid; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffdddd
+}
+.loginbg {
+	BACKGROUND-image: url(../Images/bglogin.gif)
+}
+.bhartiemailid {
+	BORDER-RIGHT: #ffdcdc 0px solid; BORDER-TOP: #e78c97 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #ffdcdc 0px solid; WIDTH: 220px; BORDER-BOTTOM: #dfaaad 1px solid; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; HEIGHT: 27px; BACKGROUND-COLOR: #ffdddd
+}
+.enteryouremailid {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #65444d; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif
+}
+#loginTable {
+	WIDTH: 290px
+}
+#loggedtable {
+	WIDTH: 347px
+}
+#loggedtable .blackcontent {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; VERTICAL-ALIGN: bottom; COLOR: #000000; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#loggedtable .whitecontent {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#loggedtable .whitecontent:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#loggedtable LI {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #ffffff; LINE-HEIGHT: 14px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#loginTable .forgot {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; VERTICAL-ALIGN: bottom; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#loginTable .forgot:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; VERTICAL-ALIGN: bottom; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+#loginTable .guidelines {
+	FONT-SIZE: 11px; VERTICAL-ALIGN: bottom; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#loginTable .guidelines:hover {
+	FONT-SIZE: 11px; VERTICAL-ALIGN: bottom; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+#loginTable .bottomtext {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; VERTICAL-ALIGN: bottom; COLOR: #ffffff; LINE-HEIGHT: 14px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#myoffice {
+	BACKGROUND-image: url(../Images/my-office.png); WIDTH: 247px; HEIGHT: 131px
+}
+#myoffice .myofficecontenttd {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #565d59; LINE-HEIGHT: 14px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#mywork {
+	BACKGROUND-image: url(../Images/loginmywork.png); WIDTH: 247px; HEIGHT: 131px
+}
+.myworkcontenttd {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #565d59; LINE-HEIGHT: 14px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif
+}
+#myspace {
+	BACKGROUND-image: url(../Images/loginmyspace.png); WIDTH: 247px; HEIGHT: 131px
+}
+#myspace .myspacelogincontent {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #565d59; LINE-HEIGHT: 14px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif
+}
+#loggedmyspace .myspacecontenttd {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; PADDING-BOTTOM: 3px; COLOR: #ffffff; LINE-HEIGHT: 14px; PADDING-TOP: 3px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#loggedmyspace .myspacecontenttd:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; PADDING-BOTTOM: 3px; COLOR: #ff0000; LINE-HEIGHT: 14px; PADDING-TOP: 3px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+#loggedmyoffice {
+	BACKGROUND-image: url(../Images/logged-my-office.png); WIDTH: 247px; HEIGHT: 131px
+}
+#loggedmyoffice .myofficecontenttd {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; PADDING-BOTTOM: 3px; COLOR: #ffffff; LINE-HEIGHT: 14px; PADDING-TOP: 3px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#loggedmyoffice .myofficecontenttd:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #ff0000; LINE-HEIGHT: 14px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+#loggedmyoffice .homelink {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; LINE-HEIGHT: 14px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#loggedmyoffice .homelink:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; LINE-HEIGHT: 14px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+#loggedmywork {
+	BACKGROUND-image: url(../Images/loggedmywork.png); WIDTH: 247px; HEIGHT: 131px
+}
+#loggedmywork .myworkcontenttd {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; PADDING-BOTTOM: 3px; COLOR: #ffffff; LINE-HEIGHT: 14px; PADDING-TOP: 3px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#loggedmywork .myworkcontenttd:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; PADDING-BOTTOM: 3px; COLOR: #ff0000; LINE-HEIGHT: 14px; PADDING-TOP: 3px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+#loggedmyspace {
+	BACKGROUND-image: url(../Images/loggedmyspace.png); WIDTH: 247px; HEIGHT: 131px
+}
+#loggedmyspace TD {
+	COLOR: #ffffff
+}
+#loggedmyspace .myworkcontenttd {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; WIDTH: 150px; COLOR: #565d59; LINE-HEIGHT: 14px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif
+}
+.showballon {
+	DISPLAY: block; Z-INDEX: -1; BACKGROUND: url(../Images/balone.png) no-repeat left top; LEFT: 380px; WIDTH: 167px; POSITION: absolute; TOP: 15px; HEIGHT: 250px
+}
+.hideballon {
+	DISPLAY: none; Z-INDEX: -1; BACKGROUND: url(../Images/balone.png) no-repeat left top; LEFT: 380px; WIDTH: 167px; POSITION: absolute; TOP: 15px; HEIGHT: 250px
+}
+.changepassword {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.changepassword:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.birthday {
+	FONT-WEIGHT: bold; FONT-SIZE: 21px; COLOR: #088fa4; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#bottomtable {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; WIDTH: 100%; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif
+}
+#bottomtable {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; FONT-WEIGHT: normal; FONT-SIZE: 11px; PADDING-BOTTOM: 8px; COLOR: #ffffff; PADDING-TOP: 8px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif
+}
+.toplinkmyoffice {
+	PADDING-LEFT: 3px; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Verdana; TEXT-DECORATION: none
+}
+.toplinkmyoffice:hover {
+	DISPLAY: block; PADDING-LEFT: 3px; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Verdana; BACKGROUND-COLOR: #f60001; TEXT-DECORATION: none
+}
+.toplinkmywork {
+	PADDING-LEFT: 3px; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Verdana; TEXT-DECORATION: none
+}
+.toplinkmywork:hover {
+	DISPLAY: block; PADDING-LEFT: 3px; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Verdana; BACKGROUND-COLOR: #0084a5; TEXT-DECORATION: none
+}
+.toplinkmyspace {
+	PADDING-LEFT: 3px; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Verdana; TEXT-DECORATION: none
+}
+.toplinkmyspace:hover {
+	DISPLAY: block; PADDING-LEFT: 3px; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Trebuchet MS, Arial, Verdana; BACKGROUND-COLOR: #1b5859; TEXT-DECORATION: none
+}

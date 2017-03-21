@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<storedqueries>
+	<!-- dataSrc details -->
+	<datasources>
+		<datasource name="db2">
+			<path>jdbc/ioes</path>
+		</datasource>
+	</datasources>
+
+	<!-- Stored Query -->
+	<storedquery name="validatePwdExpiry" datasource="db2">
+		<query>
+			Select (DAYS(CURRENT DATE) - DAYS(MODIFIEDDATE)) as diffdate
+			from NPD.TM_EMPLOYEE where EMAIL = '?'
+		</query>
+	</storedquery>
+
+	<storedquery name="validatePwdHistory" datasource="db2">
+		<query>
+			Select count(b.OLDPWD ) as matches from
+			NPD.TM_EMPLOYEE a, NPD.TM_PASSWORD_HIST b where
+			a.EMAIL = '?' and b.NPDEMPID = a.NPDEMPID and b.OLDPWD
+			= '?'
+		</query>
+	</storedquery>
+	
+	<storedquery name="authenticate" datasource="db2">
+		<query>Select * from NPD.TM_EMPLOYEE where EMAIL='?' and 
+		PASSWORD ='?' and RETRYCOUNT &lt;? and DISABLEDFLAG=1</query>
+	</storedquery>
+
+	<storedquery name="invalidLoginCnt" datasource="db2">
+		<query>
+			update NPD.TM_EMPLOYEE set RETRYCOUNT=RETRYCOUNT+1 where
+			EMAIL='?'
+		</query>
+	</storedquery>
+
+	<storedquery name="resetLoginCnt" datasource="db2">
+		<query>
+			update NPD.TM_EMPLOYEE  set RETRYCOUNT=0 where
+			EMAIL='?'
+		</query>
+	</storedquery>
+
+	<storedquery name="chkAcctLocked" datasource="db2">
+		<query>
+			select RETRYCOUNT from NPD.TM_EMPLOYEE  where EMAIL='?'
+			and DISABLEDFLAG=1
+		</query>
+	</storedquery>
+	
+</storedqueries>

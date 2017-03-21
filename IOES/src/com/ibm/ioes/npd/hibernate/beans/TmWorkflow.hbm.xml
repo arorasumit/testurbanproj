@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 9, 2009 11:12:38 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+	<class name="com.ibm.ioes.npd.hibernate.beans.TmWorkflow"
+		table="TM_WORKFLOW">
+		<id name="workflowid" type="int">
+			<column name="WORKFLOWID" />
+			<generator class="identity" />
+		</id>
+		<property name="workflowname" type="string">
+			<column name="WORKFLOWNAME" length="50" />
+		</property>
+		<property name="workflowdesc" type="string">
+			<column name="WORKFLOWDESC" length="100" />
+		</property>
+		<property name="applicationname" type="string">
+			<column name="APPLICATIONNAME" length="50" />
+		</property>
+		<property name="applicationcode" type="string">
+			<column name="APPLICATIONCODE" length="10" />
+		</property>
+		<property name="createdby" type="int">
+			<column name="CREATEDBY" not-null="true" />
+		</property>
+		<property name="createddate" type="timestamp">
+			<column name="CREATEDDATE" length="26" not-null="true" />
+		</property>
+		<property name="modifiedby" type="java.lang.Integer">
+			<column name="MODIFIEDBY" />
+		</property>
+		<property name="modifieddate" type="date">
+			<column name="MODIFIEDDATE" length="10" />
+		</property>
+		<property name="isactive" type="int">
+			<column name="ISACTIVE" not-null="true" />
+		</property>
+		<many-to-one name="npdCategory"
+			class="com.ibm.ioes.npd.hibernate.beans.TmNpdcategory" lazy="false">
+			<column name="NPDCATEGORY" />
+		</many-to-one>
+	</class>
+</hibernate-mapping>

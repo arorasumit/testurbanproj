@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 9, 2009 11:12:38 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+    <class name="com.ibm.ioes.npd.hibernate.beans.TmEmpescalationmatrix" table="TM_EMPESCALATIONMATRIX">
+        <id name="empescmatrixid" type="long">
+            <column name="EMPESCMATRIXID" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="tmEmployee" class="com.ibm.ioes.npd.hibernate.beans.TmEmployee" fetch="select">
+            <column name="NPDEMPID" not-null="true" />
+        </many-to-one>
+        <property name="level1" type="long">
+            <column name="LEVEL1" not-null="true" />
+        </property>
+        <property name="level2" type="java.lang.Long">
+            <column name="LEVEL2" />
+        </property>
+        <property name="isactive" type="int">
+            <column name="ISACTIVE" not-null="true" />
+        </property>
+        <property name="createdby" type="long">
+            <column name="CREATEDBY" not-null="true" />
+        </property>
+        <property name="createddate" type="timestamp">
+            <column name="CREATEDDATE" length="26" not-null="true" />
+        </property>
+        <property name="modifiedby" type="java.lang.Long">
+            <column name="MODIFIEDBY" />
+        </property>
+        <property name="modifieddate" type="timestamp">
+            <column name="MODIFIEDDATE" length="26" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 12, 2010 4:57:24 PM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+    <class name="com.ibm.ioes.npd.hibernate.beans.TmNpdcategory" table="TM_NPDCATEGORY">
+        <id name="npdcatid" type="int">
+            <column name="NPDCATID" />
+            <generator class="identity" />
+        </id>
+        <property name="npdcatdesc" type="string">
+            <column name="NPDCATDESC" length="25" not-null="true" />
+        </property>
+        <property name="isactive" type="int">
+            <column name="ISACTIVE" not-null="true" />
+        </property>
+        <property name="createddate" type="timestamp">
+            <column name="CREATEDDATE" length="26" not-null="true" />
+        </property>
+        <property name="createdby" type="long">
+            <column name="CREATEDBY" not-null="true" />
+        </property>
+        <property name="modifieddate" type="timestamp">
+            <column name="MODIFIEDDATE" length="26" />
+        </property>
+        <property name="modifiedby" type="java.lang.Long">
+            <column name="MODIFIEDBY" />
+        </property>
+    </class>
+</hibernate-mapping>

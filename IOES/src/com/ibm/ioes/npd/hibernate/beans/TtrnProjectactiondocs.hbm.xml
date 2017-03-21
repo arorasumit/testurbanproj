@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 9, 2009 11:12:37 AM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+    <class name="com.ibm.ioes.npd.hibernate.beans.TtrnProjectactiondocs" table="TTRN_PROJECTACTIONDOCS">
+        <composite-id name="id" class="com.ibm.ioes.npd.hibernate.beans.TtrnProjectactiondocsId">
+            <key-property name="projectactiondocid" type="int">
+                <column name="PROJECTACTIONDOCID" />
+            </key-property>
+            <key-property name="projectactionid" type="long">
+                <column name="PROJECTACTIONID" />
+            </key-property>
+            <key-property name="stageid" type="java.lang.Integer">
+                <column name="STAGEID" />
+            </key-property>
+            <key-property name="taskid" type="java.lang.Long">
+                <column name="TASKID" />
+            </key-property>
+            <key-property name="docname" type="string">
+                <column name="DOCNAME" length="100" />
+            </key-property>
+            <key-property name="document" type="blob">
+                <column name="DOCUMENT" />
+            </key-property>
+            <key-property name="docmimetype" type="string">
+                <column name="DOCMIMETYPE" length="20" />
+            </key-property>
+            <key-property name="docuploaddate" type="date">
+                <column name="DOCUPLOADDATE" length="10" />
+            </key-property>
+            <key-property name="docuploadby" type="java.lang.Integer">
+                <column name="DOCUPLOADBY" />
+            </key-property>
+            <key-property name="createdby" type="int">
+                <column name="CREATEDBY" />
+            </key-property>
+            <key-property name="createddate" type="timestamp">
+                <column name="CREATEDDATE" length="26" />
+            </key-property>
+            <key-property name="modifiedby" type="java.lang.Integer">
+                <column name="MODIFIEDBY" />
+            </key-property>
+            <key-property name="modifieddate" type="date">
+                <column name="MODIFIEDDATE" length="10" />
+            </key-property>
+            <key-property name="isactive" type="int">
+                <column name="ISACTIVE" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

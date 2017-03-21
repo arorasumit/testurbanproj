@@ -1,0 +1,42 @@
+
+.th{background:#F7F7E7; margin:10px; padding:5px 0px 5px 6px; color:#000000;}
+A:link {COLOR: #0000EE;}
+A:hover {COLOR: #0000EE;}
+A:visited {COLOR: #0000EE;}
+A:hover {COLOR: #0000EE;}
+
+.div_freezepanes_wrapper{
+position:relative;width:100%;height:500px;
+overflow:hidden;background:#fff;border-style: ridge;
+}
+
+.div_verticalscroll{
+position: absolute;right:0px;width:18px;height:367px;
+background:#EAEAEA;border:1px solid #C0C0C0;
+}
+
+.buttonUp{
+width:20px;position: absolute;top:2px;
+}
+
+.buttonDn{
+width:20px;position: absolute;bottom:22px;
+}
+
+.div_horizontalscroll{
+position: absolute;bottom:0px;width:1068px;height:18px;
+background:#EAEAEA;border:1px solid #C0C0C0;
+}
+
+.buttonRight{
+width:20px;position: absolute;left:0px;padding-top:2px;
+}
+
+.buttonLeft{
+	width:20px;
+	position: absolute;
+	right:22px;
+	padding-top:2px;
+	left: 1038px;
+	top: 0px;
+}

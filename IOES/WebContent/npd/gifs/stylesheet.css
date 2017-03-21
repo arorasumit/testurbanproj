@@ -1,0 +1,73 @@
+/* CSS Document */
+
+body{margin:0px; padding:0px;}
+table{border-collapse: collapse;}
+table, img {border:0px;}
+table tr, table td {margin:0px; padding:0px;}
+form{margin:0px; padding:0px;}
+
+.welcome{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#ffffff; padding:5px 20px 4px 20px;}
+.welcome a{color:#fff000; text-decoration:none;}
+.welcome a:hover{text-decoration:underline;}
+
+.login-hd{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:18px; color:#ffffff; padding-left:10px; font-weight:bold;}
+.login-txt{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#891701; margin:10px 0px 10px 0px;}
+.login-txt td{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#891701; padding:5px 0px 5px 10px;}
+.login-txt td font{color:#ff0000; font-size:12px;}
+.login-txt td a{color:#891701; text-decoration:none;}
+.login-txt td a:hover{color:#891701; text-decoration:underline;}
+
+.foot{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#ffffff; padding:6px 10px 6px 10px; text-align:right;}
+
+.heading{font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold;color:#af0000; font-size:20px; text-align:center; margin:5px 0px 10px 0px;line-height:30px;}
+.heading b{border-bottom:4px #d00502 solid; font-weight:bold;padding:0px 6px 0px 6px; }
+
+.mid-td{padding:0px 15px 0px 15px;}
+
+.table-top{background:#fff7f6; border:1px #ffd4d2 solid;}
+.table-top td{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; font-weight:bold; color:#ae0c00;padding:8px;border:1px #ffd4d2 solid;}
+
+.main-table{background:#ffdcd6; border:1px #ed9180 solid; padding:8px 8px 4px 8px; margin-top:15px;}
+.main-table p{margin:0px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:14px; color:#ff2c29; font-weight:bold;}
+.main-table .htb{margin:0px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:14px; color:#ff2c29; font-weight:bold; border:none; background:#ffdcd6;padding:0px;}
+.main-table .htb td{border:none; background:#ffdcd6;padding:0px;}
+
+.main-table .htb1{margin:0px 0px 0px 0px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#ff2c29; font-weight:bold; border:none; background:#ffdcd6;padding:0px;}
+.main-table .htb1 td{border:none; background:#ffdcd6;padding:0px 0px 0px 10px;color:#ff2c29;}
+
+.main-table table{margin:8px 0px 5px 0px;font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000; background:#fff2f0; border:1px #ffbebd solid;}
+.main-table table td{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000;border:1px #ffbebd solid;padding:5px 3px 5px 4px; vertical-align:top; line-height:13px;}
+
+.dot-mid{margin:20px 0px 20px 0px; background:url(dot-mid.gif); padding-top:1px;}
+
+.form-div{background:#fff6f4; border:1px #f6c6bc solid; padding:10px 0px 10px 0px;}
+
+.form-tb{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000; font-weight:bold; margin:0px;}
+.form-tb td{padding:5px 10px 5px 5px;font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000;}
+.form-tb td font{color:#ff0000;font-size:11px;}
+
+.form-submit{text-align:center; padding:3px 0px 3px 0px; margin:10px 0px 10px 0px; background:#ffe2dd;}
+
+.main-table1 p{margin:0px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:14px; color:#ff2c29; font-weight:bold;}
+.main-table1 table{margin:8px 0px 5px 0px;font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000; background:#fff2f0; border:1px #ffbebd solid;}
+.main-table1 table td{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000;border:1px #ffbebd solid;padding:5px 3px 5px 4px; vertical-align:top; line-height:13px;}
+
+
+.main-table2 p{margin:0px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:14px; color:#ff2c29; font-weight:bold;}
+.main-table2 table{margin:0px;font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000; background:#fff2f0; border:1px #ffbebd solid;}
+.main-table2 table td{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000;border:1px #ffbebd solid;padding:5px 3px 5px 4px; vertical-align:top; line-height:13px;}
+
+.main-table2 .site{background:none; border:none;}
+.main-table2 .site td{border:none; font-size:12px; font-weight:bold; color:#910011;}
+
+
+.form-tab1{background:#fff6f4; border:1px #f6c6bc solid; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000;}
+.form-tab1 td{border:1px #f6c6bc solid; padding:3px 3px 3px 10px;}
+.form-tab1 td a{text-decoration:none; color:#000000;}
+.form-tab1 td a:hover{text-decoration:underline;}
+
+.avi{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#000000;}
+
+.sel{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;}
+
+

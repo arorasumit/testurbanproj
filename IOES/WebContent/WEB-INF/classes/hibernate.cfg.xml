@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory name="SessionFactory_NPD">
+
+		<property name="hibernate.bytecode.use_reflection_optimizer">
+			true
+		</property>
+		<property name="hibernate.connection.autocommit">
+			false
+		</property>
+		<property name="connection.datasource">jdbc/ioes</property>
+		<property name="hibernate.current_session_context_class">
+			thread
+		</property>
+		<property name="hibernate.transaction.factory_class">
+			org.hibernate.transaction.JDBCTransactionFactory
+		</property>
+		<property name="hibernate.default_schema">NPD</property>
+		<property name="hibernate.dialect">
+			org.hibernate.dialect.DB2Dialect
+		</property>
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.transaction.auto_close_session">
+			false
+		</property>
+
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmEmployee.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmEmpescalationmatrix.hbm.xml" />
+		<mapping resource="com/ibm/ioes/npd/hibernate/beans/TmRoles.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmRoleempmapping.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmMeetings.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TtrnMeetingschedules.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TtrnMeetingattendies.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TtrnMeetingmoms.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmReferencedocs.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmWorkflow.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmWorkflowstage.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmWorkflowtasks.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TtrnProject.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TtrnProjectrisks.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TtrnProjectplrs.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TtrnProjectisssues.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TtrnProjectassumptions.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TtrnProjectplrdetails.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmNpdcategory.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmProductcategory.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmRfiDocument.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TtrnProjectworkflow.hbm.xml" />			
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TtrnProjectworkflowdet.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TtrnProjecthierarchy.hbm.xml" />			
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmstProjecthierarchytasksflow.java.hbm.xml" />			
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmMultipleTaskMapping.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmEmployeeRoleHistory.hbm.xml" />
+			<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmWorkflowHistory.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmWorkflowstageHistory.hbm.xml" />
+		<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmWorkflowtasksHistory.hbm.xml" />
+			<mapping
+			resource="com/ibm/ioes/npd/hibernate/beans/TmRfiClarification.hbm.xml" />
+	</session-factory>
+
+</hibernate-configuration>
